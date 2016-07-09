@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" charset="utf-8">
+    <!--引入样式表-->
+    <link rel ="stylesheet" href="css/recode.css">
+    <link rel ="stylesheet" href="css/share.css">
+    <!--引用JQ Mobile-->
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script>
+        function getWidth()
+        {
+            if(window.innerWidth>600){
+                window.location.href="Welcome.html";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="content">
+             <div class="header_shadow_blue">
+            <!--  <span style="color:rgb(255,255,255);">test page</span> -->
+            <!--返回-->
+            <a href=" "><div class="barbtnL"></div></a>
+            <!--顶部文字-->
+            <span class="header_title">消费记录</span>
+        </div>
+        <div data-role="main" id="main" class="main_scroll_gray">
+           <div id="bord">
+               <div id="time">
+                       <input type="button" value="2016年" class="year"/>
+                       <input type="button" value="6月" class="month"/>
+               </div>
+               <div id="expends">
+                    <input type="button" value="消费" class="title"/>
+                   <input id="expends_m" type="button" value="150.0" class="money"/>
+               </div>
+               <div id="balance">
+                   <input type="button" value="余额" class="title"/>
+                   <input  type="button" value="7.0" class="money"/>
+               </div>
+           </div>
+           <div id="div_line"/>
+           <div id="record">
+               
+           </div>
+        </div> 
+        <!--底部栏-->
+        <div name="footer"  class="footer">
+            <!--首页-->
+            <a href=""><div id="home" class="footer_btn"></div></a>
+            <!--路线-->
+            <a href=""><div id="b_line" class="footer_btn"></div></a>
+            <!--单程票-->
+            <a href=""><div id="b_ticket" class="footer_btn"></div></a>
+            <!--账户-->
+            <a href=""><div id="person" class="footer_btn"></div></a>
+        </div>
+    </div>
+</body>
+</html>

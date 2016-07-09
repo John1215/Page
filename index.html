@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" charset="utf-8">
+    <!--引入样式表-->
+    <link rel ="stylesheet" href="css/index.css">
+    <link rel ="stylesheet" href="css/share.css">
+    <!--引用JQ Mobile-->
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script>
+        function getWidth()
+        {
+            if(window.innerWidth>600){
+                window.location.href="Welcome.html";
+            }
+        }
+    </script>
+</head>
+<body onload="getWidth()">
+    <!--容器-->
+    <div class="content">
+        <!--头部-->
+        <div data-role="header" class="header">
+            <!--  <span style="color:rgb(255,255,255);">test page</span> -->
+            <!--顶部左边按钮-->
+            <a href=" "><div id="barbtnL"></div></a>
+            <span style="color:rgb(255,255,255);">test page</span>
+            <!--顶部右边按钮-->
+            <a href=" "><div id="barbtnR"></div></a>
+        </div>
+        <!--主界面-->
+        <div data-role="main" id="main">
+            <!--横幅-->
+            <div id="banner"></div>
+            <!--功能块-->
+            <div id="menu">
+                <!--个人信息块-->
+                <div id="info"></div>
+                <!--按钮集-->
+                <div id="btns">
+                    <!--按钮第一行-->
+                    <div id="btns_1" class="btns_">
+                        <!--二维码-->
+                        <a href="myqcode.html"><div id="qcode"></div></a>
+                        <!--单程票-->
+                        <a href=" "><div id="ticket"></div></a>
+                        <!--地图-->
+                        <a href=" "><div id="map"></div></a>
+                    </div>
+                    <!--按钮第二行-->
+                    <div id="btns_2" class="btns_">
+                        <!--路线-->
+                        <a href=" "><div id="line"></div></a>
+                        <!--附近-->
+                        <a href=" "><div id="nearby"></div></a>
+                        <!--充值-->
+                        <a href=" "><div id="topup"></div></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!--底部栏-->
+        <div name="footer"  class="footer">
+            <!--首页-->
+            <a href=""><div id="home" class="footer_btn"></div></a>
+            <!--路线-->
+            <a href=""><div id="b_line" class="footer_btn"></div></a>
+            <!--单程票-->
+            <a href=""><div id="b_ticket" class="footer_btn"></div></a>
+            <!--账户-->
+            <a href=""><div id="person" class="footer_btn"></div></a>
+        </div>
+    </div>
+
+</body>
+
+</html>

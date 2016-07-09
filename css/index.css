@@ -1,0 +1,22 @@
+body{
+    margin:0px;panding:0px;height=100%;
+}
+.header{background:rgb(0,0,0);text-align:center;height:50px;}
+#barbtnL{width:50px;height:100%;background:red;float:left;}
+#barbtnR{width:50px;height:100%;background:red;float:right;}
+#main{
+    position:absolute;width:100%;height:-webkit-calc(100% - 95px);text-align:center;
+}
+#banner{width:100%;background:green; height:25%;}
+#menu{width:100%;background:yellow; height:70%; margin-top:14px;}
+#info{width:100%;background:red;height:30%;}
+#btns{width:90%;background:black;height:70%;margin:0px auto;}
+.btns_{width:100%;height:50%;background:gray;}
+#qcode{
+    width:33%;height:100%;background:blue;float:left;
+}
+#ticket{width:33%;height:100%;background:yellow;float:left;}
+#map{width:33%;height:100%;background:gray;float:right;}   
+#line{width:33%;height:100%;background:gray;float:left;}
+#nearby{width:33%;height:100%;background:blue;float:left;}
+#topup{width:33%;height:100%;background:red;float:right;}

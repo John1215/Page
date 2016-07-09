@@ -1,0 +1,42 @@
+#bord{
+    width:100%;
+    height:-webkit-calc(14%);
+     box-shadow:0px 1px 8px #bebebe;
+    background-color:rgba(50,153,205,.8);
+    position:absolute;
+    top:50px;
+}
+#time{
+    width:36%;
+    height:100%;
+    float: left;
+    background-color: rgba(0,0,0,.0);
+}
+#expends{
+     width:32%;
+    height:100%;
+    float: left;
+    background-color: rgba(0,0,0,.0);
+}
+#balance{
+    width:32%;
+    height:100%;
+    float: left;
+   background-color: rgba(0,0,0,.0);
+}
+#div_line{
+    width:33%;
+    top:66px;
+    height:-webkit-calc(8%);
+    position: absolute;
+     border-right-style: dashed;
+    border-right-color: white;
+    border-right-width: 2px;
+    vertical-align: middle;
+    float: left;
+}
+
+
+
+
+
