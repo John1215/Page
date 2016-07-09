@@ -32,6 +32,7 @@
     background-color: rgba(0,0,0,.0);
 /*    padding-top:1px;*/
       padding-left:0px;
+    -webkit-appearance:none;
 }
 #balance{
     height:35px;
