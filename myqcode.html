@@ -10,15 +10,9 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
     <script>
-        function getWidth()
-        {
-            if(window.innerWidth>600){
-                window.location.href="Welcome.html";
-            }
-        }
     </script>
 </head>
-    <body onload="getWidth()">
+    <body>
     <!--容器-->
     <div class="content">
         <!--头部-->
@@ -30,10 +24,10 @@
             <span class="header_title">我的二维码</span>
         </div>
         <!--主界面-->
-        <div data-role="main" id="main">
+        <div data-role="main" class="main_blue">
             <div id="card" class="card">
             <div id ="qcode_logo">logo</div>
-                <div id ="qcode">二维码</div>
+                <div id ="qcode">支付</div>
                 <div id="refresh">
                 <span style="">刷新</span></div>
                 <div id="info">余额</div>

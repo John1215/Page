@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" charset="utf-8">
+    <!--引入样式表-->
+    <link rel ="stylesheet" href="css/signup.css">
+     <link rel ="stylesheet" href="css/share.css">
+    <!--引用JQ Mobile-->
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script>
+       $(document).ready(function(){
+                 $('#div_head').css('margin-top',"-webkit-calc("+$('#bg').css('height')+" - 50px"+")");
+})
+    </script>
+    <title>登录</title>
+</head>
+    <body>
+    <!--容器-->
+    <div id="content">
+        <!--头部-->
+     <!--   <div data-role="header" class="header">
+        </div> 
+        <!--主界面-->
+        <div data-role="main" id="main" class="main_gray">
+           <!--背景-->
+            <div id="bg" class="bg"></div>
+            <!--头像-->
+             <div class="div_head" id="div_head">
+            <div id="headimg" class="head"></div></div>
+            <!--输入框组件-->
+            <div class="div_input">
+            <!--用户名-->
+            <div class="div_user">
+            <li class="icon_user"></li>
+            <input class="input_user" type="text" placeholder="请输入手机号"/>
+        </div>
+            <!--密码-->
+            <div class="div_password">
+            <li class="icon_password"></li>
+            <input class="input_password" type="password" placeholder="请输入密码"/>
+        </div>
+        <!--密码-->
+            <div class="div_password">
+            <li class="icon_password"></li>
+            <input class="input_password" type="password" placeholder="请输入密码"/>
+        </div>
+          <!--密码-->
+            <div class="div_password">
+            <li class="icon_password"></li>
+            <input class="input_password" type="password" placeholder="请输入密码"/>
+        </div>
+          <!--密码-->
+            <div class="div_password">
+            <li class="icon_password"></li>
+            <input class="input_password" type="password" placeholder="请输入密码"/>
+        </div>
+          <!--登录按钮-->
+          <div class="div_signin">
+          <a href="">
+           <input type="button" class="btn_signin" value="注 册"/></a>
+           </div>
+            </div>
+        </div>
+        <div id="bottom">
+        <a href="" id="bottom_forget">忘记密码</a>
+        <a href="" id="bottom_signup">还没注册?</a>
+        </div>
+        </div>
+        
+        
+        
+        
+        
+    </body>
+</html>

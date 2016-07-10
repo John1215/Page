@@ -3,17 +3,13 @@
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1" charset="utf-8">
     <!--引入样式表-->
-    <link rel ="stylesheet" href="css/myaccount.css">
+    <link rel ="stylesheet" href="css/my.css">
     <link rel ="stylesheet" href="css/share.css">
     <!--引用JQ Mobile-->
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
     <script>
-         $(document).ready(function(){
-                 $('#div_head').css('margin-top',"-webkit-calc("+$('#bg').css('height')+")");
-                $('#info').css('margin-top',"-webkit-calc("+$('#bg').css('height')+" + 50px"+")");
-})
     </script>
 </head>
 <body id="body">
@@ -23,29 +19,21 @@
             <!--返回-->
             <a href=" "><div class="barbtnL"></div></a>
             <!--顶部文字-->
-            <span class="header_title">我</span>
+            <span class="header_title">我的资料</span>
         </div>
         <div data-role="main" id="main" class="main_gray">
-        <div id="bg"></div>
-        <div class="div_head" id="div_head">
+<!--        <div id="bg"></div>-->
+        
+            <div id="panel_head">
             <div id="headimg" class="head"></div>
-            <input id="username" type="button" value="飞翔的猪"/> 
             </div>
-            <div id="info">
-                <input id="balance" type="button" value="余额:20元"/> 
-                <input id="city" type="button" value="南京"/> 
-            </div>
-            <div id="panel">
-                
+            <div class="panel"></div>
+            <div class="panel"></div>
+            <div class="panel"></div>
+            <div class="panel"></div>
             </div>
             
-        
-        
-        
-        
-        
-        
-        
+ 
     </div>
      <div name="footer"  class="footer">
             <!--首页-->

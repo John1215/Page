@@ -10,21 +10,15 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
     <script>
-        function getWidth()
-        {
-            if(window.innerWidth>600){
-                window.location.href="Welcome.html";
-            }
-        }
        $(document).ready(function(){
                  $('#div_head').css('margin-top',"-webkit-calc("+$('#bg').css('height')+" - 50px"+")");
 })
     </script>
     <title>登录</title>
 </head>
-    <body onload="getWidth()">
+    <body>
     <!--容器-->
-    <div id="content">
+<!--    <div id="content">-->
         <!--头部-->
      <!--   <div data-role="header" class="header">
         </div> 
@@ -58,7 +52,7 @@
         <a href="" id="bottom_forget">忘记密码</a>
         <a href="" id="bottom_signup">还没注册?</a>
         </div>
-        </div>
+<!--        </div>-->
         
         
         
