@@ -73,8 +73,8 @@
     float: right;
 }
 #panel{
-    margin-top:12px;
-    height:-webkit-calc(82% - 141px);
+    margin-top:15px;
+    height:-webkit-calc(93% - 141px);
     width:100%;
  background-color:rgba(0,0,0,.0);
     border-left:none;
@@ -112,7 +112,7 @@
     display: block;
     width: 55%;
     height: 40px;
-    margin: 15px auto;
+    margin: 18px auto;
     border-radius:3px;
     background-color:red;
     border:none;
