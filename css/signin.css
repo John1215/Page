@@ -1,8 +1,42 @@
-.header{text-align:center;height:50px;width:100%;border:none;top:0;left:0;z-index:999;position: fixed;}
+
+@media screen and (min-height:561px) {
+    .bg{
+        height:160px;
+    }
+     .head{
+        height:90px;
+        width:90px;
+         margin:0px auto;
+    }
+    .div_head{
+        margin-top:113px;
+    }
+    .div_input{
+        margin-top:80%;
+    }
+}
+@media screen and (max-height:560px) {
+   .bg{
+        height:115px;
+    }
+    .head{
+        height:80px;
+        width:80px;
+        margin:0px auto;
+    }
+    .div_head{
+        margin-top:73px;
+    }
+      .div_input{
+        margin-top:66%;
+    }
+}
+
+
 .div_input{
     height: 40%;
     width: 100%;
-    margin-top:72%;
+/*    margin-top:72%;*/
 /*    background-color: darkorchid;*/
 }
 /*用户名框*/
@@ -74,7 +108,7 @@ height: 23px;
 /*背景图片*/
 .bg{
     width:100%;
-    height:30%;
+/*    height:30%;*/
     background:red;
     margin:0px auto;
     position:absolute;
@@ -83,18 +117,14 @@ height: 23px;
 /*头像*/
 .div_head{
     width:100%;
-    height:18%;
     z-index:999;
 /*    background:rgba(0,0,0,.3);*/
     position:absolute;
 }
 .head{
-    height:100px;
-    width:100px;
     background-color: aqua;
-    margin:0px auto;
     border-radius: 100%;
-    border-width:3px;
+    border-width:2px;
     border-style: solid;
     border-color: white;
 }
@@ -145,4 +175,3 @@ height: 23px;
     float: right;
     font-size: 16px;
 }
-@media(max-height:)
