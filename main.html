@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1" charset="utf-8">
     <!--引入样式表-->
-    <link rel ="stylesheet" href="css/index.css">
+    <link rel ="stylesheet" href="css/main.css">
     <link rel ="stylesheet" href="css/share.css">
     <!--引用JQ Mobile-->
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
@@ -15,11 +15,8 @@
     <div class="content">
         <!--头部-->
         <div data-role="header" class="header_noshadow">
-            <!--  <span style="color:rgb(255,255,255);">test page</span> -->
-            <!--顶部左边按钮-->
             <a href=" "><div class="barbtnL"></div></a>
             <span class="header_title">主页</span>
-            <!--顶部右边按钮-->
             <a href=" "><div class="barbtnR"></div></a>
         </div>
         <!--主界面-->
@@ -35,9 +32,9 @@
                     <!--按钮第一行-->
                     <div id="btns_1" class="btns_">
                         <!--二维码-->
-                        <a href="myqcode.html"><div id="qcode"></div></a>
+                        <a href="myqrcode.html"><div id="qcode"></div></a>
                         <!--单程票-->
-                        <a href=" "><div id="ticket"></div></a>
+                        <a href="buygift.html"><div id="ticket"></div></a>
                         <!--地图-->
                         <a href=" "><div id="map"></div></a>
                     </div>
@@ -48,22 +45,21 @@
                         <!--附近-->
                         <a href=" "><div id="nearby"></div></a>
                         <!--充值-->
-                        <a href=" "><div id="topup"></div></a>
+                        <a href="recharge.html"><div id="topup"></div></a>
                     </div>
                 </div>
                 
             </div>
         </div>
-        <!--底部栏-->
-        <div name="footer"  class="footer">
-            <!--首页-->
-            <a href=""><div id="home" class="footer_btn"></div></a>
-            <!--路线-->
-            <a href=""><div id="b_line" class="footer_btn"></div></a>
-            <!--单程票-->
-            <a href=""><div id="b_ticket" class="footer_btn"></div></a>
-            <!--账户-->
-            <a href=""><div id="person" class="footer_btn"></div></a>
+         <div name="footer"  class="footer">
+        
+        <a href="main.html"><div id="home" class="footer_btn"><div class="footer_btn_icon"><img class="barbtnimg" src="img/home3.png"/></div><div class="footer_btn_text">首页</div></div></a>
+      
+            <a href="http://m.amap.com/subway/#city=3201"><div id="b_line" class="footer_btn"><div class="footer_btn_icon"><img class="barbtnimg" src="img/line3.png"/></div><div class="footer_btn_text">路线</div></div></a>
+          
+            <a href="buygift.html"><div id="b_ticket" class="footer_btn"><div class="footer_btn_icon"><img class="barbtnimg" src="img/gift3.png"/></div><div class="footer_btn_text">单程票</div></div></a>
+        
+            <a href="myaccount.html"><div id="person" class="footer_btn"><div class="footer_btn_icon"><img class="barbtnimg" src="img/account3.png"/></div><div class="footer_btn_text">账户</div></div></a>
         </div>
     </div>
 

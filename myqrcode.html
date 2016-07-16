@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1" charset="utf-8">
     <!--引入样式表-->
-    <link rel ="stylesheet" href="css/myqcode.css">
+    <link rel ="stylesheet" href="css/myqrcode.css">
     <link rel ="stylesheet" href="css/share.css">
     <!--引用JQ Mobile-->
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
@@ -27,7 +27,9 @@
         <div data-role="main" class="main">
             <div id="card" class="card">
             <div id ="qcode_logo">logo</div>
-                <div id ="qcode">支付</div>
+                <div id ="qcode">
+                    <img id="qrcode" class="qrcode" src="img/QRcode.png"/>
+                </div>
                 <div id="refresh">
                 <span style="">刷新</span></div>
                 <div id="info">余额</div>

@@ -22,6 +22,26 @@
                 }
             }
         } 
+        
+        
+        
+    </script>
+    <script>
+    function add(){
+        clear();
+        $(this).addClass("active");
+        alert("yes");
+    }
+    function clear(){
+        $("div#pay").each(function(){
+            if($(this).hasClass("active")){
+                $(this).removeClass("active");
+            }
+        })
+    }
+    
+    
+    
     </script>
 </head>
 <body class="body_gray">
@@ -36,24 +56,31 @@
         <div data-role="main" id="main" class="main">
 <!--        <div id="bg"></div>-->
             <div style="height:50px;width:100%;margin-top:0px;"></div>
-            <a href="" style="text-decoration:none;"><div class="panel_pay">
+           <div id="pay" class="panel_pay" onclick="add()">
             <div id="headimg" class="head"></div>
             <input type="button" class="bankcard_name" value="中国工商银行"/>
             <input type="button" class="bankcard_num" value="尾号：6789"/>
-            </div></a>
-            <a href="" style="text-decoration:none;"><div class="panel_pay">
+            </div>
+            <div id="pay" class="panel_pay">
             <div id="headimg" class="head"></div>
             <input type="button" class="bankcard_name" value="支付宝"/>
             <input type="button" class="bankcard_num" value="账号：136****1817"/>
-            </div></a>
-            <a href="" style="text-decoration:none;"><div class="panel_pay">
+            </div>
+            <div div id="pay" class="panel_pay">
             <div id="headimg" class="head"></div>
             <input type="button" class="bankcard_name" value="微信支付"/>
             <input type="button" class="bankcard_num" value="账号：136****1817"/>
-            </div></a>
-            <div style="width:100%;height:4%;margin-top:3px;"><span style="color:lightgray;font-family:'黑体';font-size:13px;width:100%;">点击选择支付方式,最高可充2000元</span></div><div style="width:100%;height:7%;background:red;">添加</div>
+            </div>
+<!--            <div style="width:100%;height:4%;margin-top:3px;"><span style="color:lightgray;font-family:'黑体';font-size:13px;width:100%;">点击选择支付方式,最高可充2000元</span></div>-->
+            
+<!--             <img class="addcard" src="img/add2.png"/>-->
+           
+            
+<div class="add">添加新的支付方式</div>
+            
+            
             <!--小数点还未解决-->
-<input type="text" id="money_input" class="money_text" placeholder=" 充值金额" onkeypress="return IsNum(event)" maxlength="8"/>
+<input type="text" id="money_input" class="money_text" placeholder=" 输入充值金额（元）" onkeypress="return IsNum(event)" maxlength="5"/>
              <input class="submit" type="button" value="确认"/>
             
             
@@ -61,15 +88,16 @@
  
     </div>
     <div name="footer"  class="footer">
-            <!--首页-->
-           <a href=""><div id="home" class="footer_btn"></div></a>
-            <!--路线-->
-            <a href=""><div id="b_line" class="footer_btn"></div></a>
-            <!--单程票-->
-           <a href=""><div id="b_ticket" class="footer_btn"></div></a>
-            <!--账户-->
-            <a href=""><div id="person" class="footer_btn"></div></a>
+        
+        <a href="main.html"><div id="home" class="footer_btn"><div class="footer_btn_icon"><img class="barbtnimg" src="img/home3.png"/></div><div class="footer_btn_text">首页</div></div></a>
+      
+            <a href="http://m.amap.com/subway/#city=3201"><div id="b_line" class="footer_btn"><div class="footer_btn_icon"><img class="barbtnimg" src="img/line3.png"/></div><div class="footer_btn_text">路线</div></div></a>
+          
+            <a href="buygift.html"><div id="b_ticket" class="footer_btn"><div class="footer_btn_icon"><img class="barbtnimg" src="img/gift3.png"/></div><div class="footer_btn_text">单程票</div></div></a>
+        
+            <a href="myaccount.html"><div id="person" class="footer_btn"><div class="footer_btn_icon"><img class="barbtnimg" src="img/account3.png"/></div><div class="footer_btn_text">账户</div></div></a>
         </div>
+    </div>
     </div>
     
 </body>

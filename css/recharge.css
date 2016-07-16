@@ -17,10 +17,14 @@
     .money_text{
         margin:6% auto;
     }
+    .addcard{
+         width:48px;
+    height:48px;
+    }
 }
 @media screen and (max-height:560px) {
     .submit{
-        margin:9% auto;
+        margin:8% auto;
     }
     .panel_pay{ height:56px;}
     .head{
@@ -35,7 +39,11 @@
         font-size:13px;
     }
     .money_text{
-        margin:1% auto;
+        margin:3% auto;
+    }
+     .addcard{
+         width:40px;
+    height:40px;
     }
 }
 .panel_pay{
@@ -88,14 +96,14 @@
 .money_text{
     height:40px;
     background-color: white;
-    border-radius:6px;
-    width:85%;
+    border-radius:3px;
+    width:75%;
 /*    margin:0px auto;*/
     border:none;
     font-family:'黑体';
     color:lightgrey;
     text-align: center;
-    font-size:18px;
+    font-size:20px;
      -webkit-appearance:none;
      outline: none;
 /*    box-shadow: 0px 1px 0px #f0f0f0;*/
@@ -116,16 +124,31 @@
 .submit{
     display: block;
 /*      margin: 10% auto;*/
-    width: 50%;
-    height: 40px;
+    width: 55%;
+    height: 35px;
     border-radius:3px;
     background-color:red;
     border:none;
     color:white;
     font-family:'黑体';
-    font-size:19px;
+    font-size:20px;
     -webkit-appearance:none;
     outline:none;
 /*    box-shadow: 0px 1px 0px #f0f0f0;*/
 }
-
+.addcard{
+   
+   margin: 0% auto;
+}
+.add{
+    margin-top:5%;
+    margin-bottom:3%;
+    text-align: center;
+    font-size:15px;
+    color:gray;
+    font-family:'黑体';
+    font-weight: 400;
+}
+.active{
+    background-color:red;
+}

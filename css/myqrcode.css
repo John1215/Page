@@ -1,0 +1,81 @@
+@media screen and (min-height:561px){
+    .card{
+/*         margin-top:28%;*/
+         height: 56%;
+    width: 80%;
+         left:-webkit-calc(10% - 10px);
+        top:-webkit-calc(29% - 50px);
+    }
+}
+
+@media screen and (max-height:560px) {
+    .card{
+/*         margin-top:26%;*/
+         height: 60%;
+         width: 74%;
+        left:-webkit-calc(13% - 10px);
+         top:-webkit-calc(30% - 50px);
+    }
+}
+
+
+.card{
+   
+    padding: 10px;
+	background-color:white;
+/*	font-size:12px;*/
+     border-style: solid;
+    border-width:1px;
+    border-color: #f0f0f0;
+    border-radius:3px;
+/*
+	box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	-moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	-webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	-webkit-transition: top 1s ease, left 1s ease;
+	-moz-transition: top 1s ease, left 1s ease;
+	-o-transition: top 1s ease, left 1s ease;
+	-ms-transition: top 1s ease, left 1s ease;
+*/
+    position: absolute;
+   
+}
+.qrcode{
+    width:100%;
+    z-index:9999;
+}
+#content{
+    height:100%;
+}
+/*#barbtnR{width:14%;height:100%;background:red;float:right;z-index:9999;margin-top:0px;}*/
+#qcode_logo{
+    width: 70%;
+    height: 12%;
+    background-color: brown;
+    top:10px;
+    left:15%;
+    position: absolute;
+}
+#qcode{
+      width: 70%;
+    background-color:rgba(0,0,0,.0);
+    position: absolute;
+    left:15%;
+        top:17%;
+}
+#info{
+    left:10%;
+      width: 80%;
+    height: 13%;
+    background-color:red;
+    position: absolute;
+    bottom:0px;
+}
+#refresh{
+    position: absolute;
+    bottom:15%;
+     width: 80%;
+     height: 5%;
+    background-color:darkcyan;
+    left:10%;
+}

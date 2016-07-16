@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" charset="utf-8">
+    <!--引入样式表-->
+    <link rel ="stylesheet" href="css/share.css">
+    <link rel ="stylesheet" href="css/buygift.css">
+    <!--引用JQ Mobile-->
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <title>单程票</title>
+    <script>
+        
+        function rest(){
+       document.getElementById('from').value = "";
+         document.getElementById('to').value = "";
+       }
+    </script>
+</head>
+<body class="body_gray">
+   <div class="content">
+   <div data-role="header" class="header_noshadow">
+           
+            <a href=" "><div class="barbtnL"><img class="barbtnimg" src="img/back.png"/></div></a>
+            <span class="header_title">单程票</span>
+
+        </div>
+         <div data-role="main" class="main">
+         <div style="height:50px;width:100%;margin-top:0px;"></div>
+         <div class="div_inputs">
+              <div class="div_input">
+            <li class="input_title">出发站点</li>
+            <input  id="from" class="input_style" type="text" size="12" maxlength="12"  placeholder=""/>
+        </div>
+              <div  class="div_input">
+            <li  class="input_title">到达站点</li>
+            <input id="to" class="input_style" type="text" size="10" maxlength="10" placeholder=""/>
+        </div> 
+        
+        
+      
+         </div>
+          
+         
+         <div class="btns">
+             
+             <input type="button" class="btn_rest" value="重置" onclick="rest()" />
+              <a href=""><input type="button" class="btn_ok" value="确定"/></a>
+              <a href=""><input type="button" class="btn_history" value="历史"/></a>
+             
+         </div>
+         
+       </div>
+
+    <div name="footer"  class="footer">
+        
+        <a href="main.html"><div id="home" class="footer_btn"><div class="footer_btn_icon"><img class="barbtnimg" src="img/home3.png"/></div><div class="footer_btn_text">首页</div></div></a>
+      
+            <a href="http://m.amap.com/subway/#city=3201"><div id="b_line" class="footer_btn"><div class="footer_btn_icon"><img class="barbtnimg" src="img/line3.png"/></div><div class="footer_btn_text">路线</div></div></a>
+          
+            <a href="buygift.html"><div id="b_ticket" class="footer_btn"><div class="footer_btn_icon"><img class="barbtnimg" src="img/gift3.png"/></div><div class="footer_btn_text">单程票</div></div></a>
+        
+            <a href="myaccount.html"><div id="person" class="footer_btn"><div class="footer_btn_icon"><img class="barbtnimg" src="img/account3.png"/></div><div class="footer_btn_text">账户</div></div></a>
+        </div>
+    </div>
+    </body>
