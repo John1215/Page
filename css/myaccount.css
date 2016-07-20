@@ -81,22 +81,23 @@
     height:35px;
     width:100px;
     float: left;
-    margin:15px 15px;
+    margin:10px 15px;
     z-index: 999;
     border:none;
     font-family:'黑体';
-    color:white;
+   color:white;
     background-color: rgba(0,0,0,.0);
 /*    padding-top:1px;*/
       padding-left:0px;
       padding-bottom:3px;
     -webkit-appearance:none;
      outline:none;
+    font-weight: 600;
 }
 #balance{
     height:35px;
     width:70px;
-    margin:0px 107px;
+    margin-left:107px;
     z-index: 999;
     border:none;
     font-family:'黑体';
@@ -147,11 +148,17 @@
    
 }
 .head{
-    background-color: aqua;
+/*    background-color: aqua;*/
     float:left;
     margin-left:12px;
-    border-radius: 100%;
-    border-width:3px;
+/*    border-radius: 100%;*/
+/*
+  
+*/
+}
+.head_img{
+    width:100%;border-radius:100%;
+      border-width:2px;
     border-style: solid;
     border-color: white;
 }
@@ -190,12 +197,13 @@
     padding-left:10px;
     -webkit-appearance:none;
     outline:none;
+    color:#797979;
 }
 .panel_pic_l{
-    width:60px;
+    width:50px;
     height:100%;
     float:left;
-    background:red;
+/*    background:red;*/
     z-index:999;
     margin-left:20px;
 }
@@ -204,7 +212,15 @@
     width:60px;
     height:100%;
     float:right;
-    background:red;
+/*    background:red;*/
     z-index:999;
-    margin-right:20px;
+    margin-right:10px;
+}
+.bgimg{
+   width:100%;
+    height:100%;
+}
+.panel_img{
+    height:100%;
+    margin-top:auto;
 }

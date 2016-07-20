@@ -10,13 +10,13 @@
         width:90px;
     }
     .div_head{
-        margin-top:16%;
+        margin-top:14%;
     }
     .div_input{
-     margin-top:55%;
+     margin-top:50%;
     }
     .btn_ok{
-         margin: 19% auto;
+       margin-top: 19%;
     }
 }
 @media screen and (max-height:560px) {
@@ -41,90 +41,80 @@
 }
 
 
-.div_input{
+.div_inputs{
     height: 40%;
     width: 100%;
 /*    margin-top:72%;*/
 /*    background-color: darkorchid;*/
 }
 /*用户名框*/
-.div_user{
-   position: relative;width:100%;height:30px;
-    margin-top:35%;
-    text-align: center;
+#div_name{
+    margin-top: 35%;
 }
-.icon_user{
-position: absolute;
-left: 12%;
-    top:35%;
-z-index:5;
-background-image: url(1.png); 
-background-repeat: no-repeat; 
-background-position: 0px 0px; 
-width: 23px; 
-height: 23px; 
-    list-style-type: none;
+#div_2{
+      margin-top:18px;
 }
-.input_user{
-      padding-left: 38px;
-        border-bottom-color: #f9f9fb;
-        border-style:solid;
-        border-width:2px;
-        border-top:none;
-     border-left:none;
-    border-right:none;
-        background-color: white;
-    height:40px;
-    width:70%;
-    font-family:'黑体';
-    font-size:20px;
-    color:lightgray;
-    -webkit-appearance:none;
-    outline:none;
-}
-/*密码框*/
-.div_password{
+.div_input{
    position: relative;
     width:100%;height:30px;
-    margin-top:18px;
     text-align: center;
 }
-.icon_password{
+
+.icon_style{
 position: absolute;
-left: 12%;
-    top:35%;
+left: 14%;
+    top:30%;
 z-index:5;
-background-image: url(1.png); 
 background-repeat: no-repeat; 
 background-position: 0px 0px; 
 width: 23px; 
-height: 23px; 
+height: 23px;
     list-style-type: none;
 }
-.input_password{
-      padding-left: 38px;
+.btn_code{
+position: absolute;
+right:13%;
+z-index:5;
+    line-height:40px;
+width:80px; 
+height:40px;
+    list-style-type: none;
+   
+    display: block;
+   color:gray;
+    font-family: '黑体';
+    font-size:13px;
+}
+
+
+.input_style{
+      padding-left: 42px;
         border:none;
         background-color: white;
     height:40px;
-    width:70%;
+    width:66%;
     font-family:'黑体';
-    font-size:20px;
+    font-size:18px;
     color:lightgray;
     -webkit-appearance:none;
     outline:none;
 }
-/*背景图片*/
-/*
-.bg{
-    width:100%;
-    height:30%;
-    background:red;
-    margin:0px auto;
-    position:absolute;
-    z-index:9
+
+#icon_name {
+    background-image: url(/img/signup/name.png); 
 }
-*/
-/*头像*/
+#icon_phone{
+     background-image: url(/img/signup/phone.png); 
+}
+#icon_password{
+    background-image: url(/img/signup/password.png); 
+}
+#icon_check{
+    background-image: url(/img/signup/check.png); 
+}
+#icon_code{
+    background-image: url(/img/signup/code.png); 
+}
 .div_head{
     width:100%;
     z-index:999;
@@ -132,16 +122,7 @@ height: 23px;
     position:absolute;
 }
 .head{
-/*
-    height:100px;
-    width:100px;
-*/
-    background-color: aqua;
     margin:0px auto;
-    border-radius: 100%;
-    border-width:2px;
-    border-style: solid;
-    border-color: white;
 }
 /*登录按钮*/
 .btn_ok{
@@ -164,7 +145,7 @@ height: 23px;
 /*    background-color: aqua;*/
     width: 100%;
     height:30px;
-    position: absolute;
+    position:fixed;
 }
 /*忘记密码*/
 #bottom_forget{
@@ -185,4 +166,10 @@ height: 23px;
     float: right;
     font-size: 16px;
 }
-@media(max-height:)
+.head_img{
+    border-radius: 100%;
+    border-width:2px;
+    border-style: solid;
+    border-color: white;
+    height:100%;
+}

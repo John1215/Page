@@ -70,11 +70,12 @@
 }
 .head{
     margin-left:12px;
-    border-radius:100%;
-    background-color: aqua;
     border:none;
     float:left;
     
+}
+.head_img{
+    width:100%;border-radius:100%;
 }
 .username_div{
     height:64%;
@@ -88,15 +89,15 @@
     font-size:24px;
     float: left;
         margin-left:10px;
-    margin-top:6%;
-        color: gray;
+    margin-top:8%;
+   color:#797979;
 }
 .city{
      font-family: '黑体';
     font-size:16px;
     float: left;
         margin-left:15%;
-     color: gray;
+      color:#797979;
 }
 .city_div{
     height:30%;
@@ -114,11 +115,11 @@
 }
 .weather{
      font-family: '黑体';
-    font-size:16px;
+    font-size:15px;
     float: right;
         margin-right:10px;
-    margin-top:6%;
-        color: gray;
+    margin-top:8%;
+          color:#797979;
 }
 .balance{
     
@@ -126,7 +127,7 @@
     font-size:16px;
     float: right;
      margin-right:10px;
-     color: gray;
+    color: #ff6d1d;
 
 }
 .balance_div{
@@ -143,3 +144,8 @@
     background-color:black;
     bottom:0px;
 }
+.scroll{margin:0 auto; width:100%; height:100%;  position:relative; overflow:hidden;}
+.scroll ul{list-style-type:none; padding:0; margin:0; position:absolute; top:0;left:0; width:99999px; height:100%; }
+.scroll li{float:left; width:100%;}
+ .prev{position:absolute; left:-2px; top:84px; }
+  .next{position:absolute; right:-2px; top:84px;}

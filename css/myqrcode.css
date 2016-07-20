@@ -1,10 +1,13 @@
 @media screen and (min-height:561px){
     .card{
 /*         margin-top:28%;*/
-         height: 56%;
+         height: 55.5%;
     width: 80%;
          left:-webkit-calc(10% - 10px);
         top:-webkit-calc(29% - 50px);
+    }
+    .balance{
+         font-size: 23px;
     }
 }
 
@@ -15,6 +18,9 @@
          width: 74%;
         left:-webkit-calc(13% - 10px);
          top:-webkit-calc(30% - 50px);
+    }
+    .balance{
+         font-size: 20px;
     }
 }
 
@@ -50,9 +56,9 @@
 /*#barbtnR{width:14%;height:100%;background:red;float:right;z-index:9999;margin-top:0px;}*/
 #qcode_logo{
     width: 70%;
-    height: 12%;
-    background-color: brown;
-    top:10px;
+    height: 13%;
+/*    background-color: brown;*/
+    top:15px;
     left:15%;
     position: absolute;
 }
@@ -61,21 +67,35 @@
     background-color:rgba(0,0,0,.0);
     position: absolute;
     left:15%;
-        top:17%;
+        top:19%;
 }
-#info{
+#balance{
     left:10%;
       width: 80%;
     height: 13%;
-    background-color:red;
     position: absolute;
     bottom:0px;
 }
-#refresh{
+#notice{
     position: absolute;
-    bottom:15%;
+    bottom:15.5%;
      width: 80%;
      height: 5%;
-    background-color:darkcyan;
     left:10%;
+}
+.logo{
+    height:95%;
+    margin:0px auto;
+    border-radius:100%;
+}
+.notice{
+    font-size: 10px;
+    font-family:'黑体';
+    color:#a7a7a7;
+}
+.balance{
+    
+     font-family:'黑体';
+     color: #ff6d1d;
+     font-weight: 600;
 }

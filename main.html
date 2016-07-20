@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
+<!--    <script src="js/jquery.slideBox.js" type="text/javascript"></script>-->
+    <script>
+</script>
 </head>
 <body class="body_gray">
     <!--容器-->
@@ -28,8 +31,10 @@
             
             <div id="menu">
                 <!--个人信息块-->
-                <div id="info"><div class="head"></div>
-                <div class="username_div"><span class="username">飞翔的猪</span></div><div class="weather_div"><span class="weather">雷阵雨转阴<br/>32度~27度</span></div><div class="city_div"><span class="city">南京市</span></div><div class="balance_div"><span class="balance">余额：150.4元</span></div>
+                <div id="info"><div class="head">
+                    <img src="img/headimg3.png" class="head_img"/>
+                </div>
+                <div class="username_div"><span class="username">飞翔的猪</span></div><div class="weather_div"><span class="weather">雷阵雨转阴<br/>32度~27度</span></div><div class="city_div"><span class="city">南京市</span></div><div class="balance_div"><span class="balance">余额:150.4元</span></div>
                 </div>
                 <!--按钮集-->
                 <div id="btns">
@@ -40,16 +45,16 @@
                         <!--单程票-->
                        <div id="ticket"><div class="btn_img_div"> <a href="buygift.html"><img class="btn_img" src="img/gift.png"/></a></div></div>
                         <!--地图-->
-                        <div id="map"><div class="btn_img_div"><a href=" "><img class="btn_img" src="img/map.png"/></a></div></div>
+                        <div id="map"><div class="btn_img_div"><a href="map.html?id=1"><img class="btn_img" src="img/map.png"/></a></div></div>
                     </div>
                     <!--按钮第二行-->
                     <div id="btns_2" class="btns_2">
                         <!--路线-->
-                        <div id="line"><div class="btn_img_div"><a href=" "><img class="btn_img" src="img/line.png"/></a></div></div>
+                        <div id="line"><div class="btn_img_div"><a href="map.html?id=2"><img class="btn_img" src="img/line.png"/></a></div></div>
                         <!--附近-->
-                       <div id="nearby"><div class="btn_img_div"> <a href=" "><img class="btn_img" src="img/nearby.png"/></a></div></div>
+                       <div id="nearby"><div class="btn_img_div"> <a href="map.html?id=3"><img class="btn_img" src="img/nearby.png"/></a></div></div>
                         <!--充值-->
-                        <div id="topup"><div class="btn_img_div"><a href="recharge.html"></a><img class="btn_img" src="img/recharge.png"/></div></div>
+                        <div id="topup"><div class="btn_img_div"><a href="recharge.html"><img class="btn_img" src="img/recharge.png"/></a></div></div>
                     </div>
                 </div>
               
@@ -61,7 +66,7 @@
         
         <a href="main.html"><div id="home" class="footer_btn"><div class="footer_btn_icon"><img class="barbtnimg" src="img/footer_home.png"/></div><div class="footer_btn_text">首页</div></div></a>
       
-            <a href="http://m.amap.com/subway/#city=3201"><div id="b_line" class="footer_btn"><div class="footer_btn_icon"><img class="barbtnimg" src="img/footer_line.png"/></div><div class="footer_btn_text">路线</div></div></a>
+            <a href="map.html?id=2"><div id="b_line" class="footer_btn"><div class="footer_btn_icon"><img class="barbtnimg" src="img/footer_line.png"/></div><div class="footer_btn_text">路线</div></div></a>
           
             <a href="buygift.html"><div id="b_ticket" class="footer_btn"><div class="footer_btn_icon"><img class="barbtnimg" src="img/footer_gift.png"/></div><div class="footer_btn_text">单程票</div></div></a>
         
