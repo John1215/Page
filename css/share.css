@@ -123,5 +123,12 @@ position:absolute;
     border-top-color:#f0f0f0;
 }
 .footer_btn{width:25%;height:100%;float:left;background:rgb(253,253,254);}
-
+input{
+        -webkit-appearance:none;
+    outline:none;
+    font-family:'黑体';
+}
+a {
+	text-decoration: none;
+}
 

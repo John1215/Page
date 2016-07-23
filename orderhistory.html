@@ -13,6 +13,36 @@
     <script src="js/jquery.easydropdown.js"></script>
     <title>历史记录</title>
     <script>
+        $(document).ready(function(){
+             if( $("#choose").val()=='used'){
+                    var html1 ="<p>are u ok?</p>";
+                       $("#show").html(html1);
+                       
+                       
+                   }
+                    if( $("#choose").val()=='unused'){
+                       var html2="<p>hello thank u</p>"
+                       $("#show").html(html2);
+                    }
+        });
+        
+        
+        
+         $(function () {
+                $("#choose").change(function () {
+                   if( $("#choose").val()=='used'){
+                    var html1 ="<p>are u ok?</p>";
+                       $("#show").html(html1);
+                       
+                       
+                   }
+                    if( $("#choose").val()=='unused'){
+                       var html2="<p>hello thank u</p>"
+                       $("#show").html(html2);
+                    }
+                  
+               });
+            }); 
     </script>
 </head>
 <body class="body_gray">
@@ -28,18 +58,15 @@
          <div class="bord">
 
             <div class="choose">
-                <select id="content" name="selse" class="select">
+                <select id="choose" class="select">
 <option value="unused" class="option">未使用订单</option>
 <option value="used" class="option">已使用订单</option></select>
             </div>
             
 
         </div>
-          <div id="notused">
-             <div class="templet_div">
-                <div class="templet_div_half"><span class="templet_city">南京</span><span class="templet_time">2016.7.23</span></div>
-                 <div class="templet_div_half"><span class="templet_way">新街口--大行宫</span><span class="templet_money">4元</span></div>
-             </div>
+          <div id="show">
+<!--
                <div class="templet_div">
                 <div class="templet_div_half"><span class="templet_city">南京</span><span class="templet_time">2016.7.23</span></div>
                  <div class="templet_div_half"><span class="templet_way">新街口--大行宫</span><span class="templet_money">4元</span></div>
@@ -56,33 +83,17 @@
                 <div class="templet_div_half"><span class="templet_city">南京</span><span class="templet_time">2016.7.23</span></div>
                  <div class="templet_div_half"><span class="templet_way">新街口--大行宫</span><span class="templet_money">4元</span></div>
              </div>
+-->
           </div>
+<!--
              <div id="used">
                 <div class="templet_div_used">
                 <div class="templet_div_half"><span class="templet_city">南京</span><span class="templet_time">2016.7.23</span></div>
                  <div class="templet_div_half"><span class="templet_way">新街口--大行宫</span><span class="templet_money_used">4元</span></div>
              </div>
-              <div class="templet_div_used">
-                <div class="templet_div_half"><span class="templet_city">南京</span><span class="templet_time">2016.7.23</span></div>
-                 <div class="templet_div_half"><span class="templet_way">新街口--大行宫</span><span class="templet_money_used">4元</span></div>
-             </div>
-              <div class="templet_div_used">
-                <div class="templet_div_half"><span class="templet_city">南京</span><span class="templet_time">2016.7.23</span></div>
-                 <div class="templet_div_half"><span class="templet_way">新街口--大行宫</span><span class="templet_money_used">4元</span></div>
-             </div>
-              <div class="templet_div_used">
-                <div class="templet_div_half"><span class="templet_city">南京</span><span class="templet_time">2016.7.23</span></div>
-                 <div class="templet_div_half"><span class="templet_way">新街口--大行宫</span><span class="templet_money_used">4元</span></div>
-             </div>
-              <div class="templet_div_used">
-                <div class="templet_div_half"><span class="templet_city">南京</span><span class="templet_time">2016.7.23</span></div>
-                 <div class="templet_div_half"><span class="templet_way">新街口--大行宫</span><span class="templet_money_used">4元</span></div>
-             </div>
-              <div class="templet_div_used">
-                <div class="templet_div_half"><span class="templet_city">南京</span><span class="templet_time">2016.7.23</span></div>
-                 <div class="templet_div_half"><span class="templet_way">新街口--大行宫</span><span class="templet_money_used">4元</span></div>
-             </div>
+              
               </div>
+-->
               <div style="height:50px;width:100%;margin-top:0px;"></div>
            </div>
          

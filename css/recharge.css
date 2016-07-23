@@ -1,6 +1,6 @@
 @media screen and (min-height:561px) {
     .submit{
-        margin:16% auto;
+        margin:8% auto;
     }
     .panel_pay{ height:66px;}
     .head{
@@ -15,7 +15,7 @@
         font-size:15px;
     }
     .money_text{
-        margin:6% auto;
+        margin:8% auto;
     }
     .addcard{
          width:48px;
@@ -24,7 +24,7 @@
 }
 @media screen and (max-height:560px) {
     .submit{
-        margin:8% auto;
+        margin:5% auto;
     }
     .panel_pay{ height:56px;}
     .head{
@@ -39,7 +39,7 @@
         font-size:13px;
     }
     .money_text{
-        margin:3% auto;
+        margin:5% auto;
     }
      .addcard{
          width:40px;
@@ -108,6 +108,9 @@
      outline: none;
 /*    box-shadow: 0px 1px 0px #f0f0f0;*/
 }
+  #bind{
+      font-family:'黑体';
+    }
 .head{
 /*
     height:50px;
@@ -136,10 +139,13 @@
     outline:none;
 /*    box-shadow: 0px 1px 0px #f0f0f0;*/
 }
+/*
 .addcard{
    
    margin: 0% auto;
 }
+*/
+/*
 .add{
     margin-top:5%;
     margin-bottom:3%;
@@ -149,6 +155,50 @@
     font-family:'黑体';
     font-weight: 400;
 }
+*/
 .active{
     background-color:red;
+}
+.bind_input
+{
+    width:85%;
+    height:35px;
+    outline:none;
+     -webkit-appearance:none;
+     outline: none;
+    background-color:#f9f9fb;
+    border-radius:2px;
+    border:none;
+    font-size:18px;
+    color: gray;
+    font-family:'黑体';
+    padding-left:6px;
+    text-align:left;
+}
+.div_code{
+       position: relative;
+    text-align: center;
+}
+.btn_code{
+position: absolute;
+right:8%;
+z-index:5;
+    margin-top:1px;
+    line-height:33px;
+width:80px; 
+height:40px;
+    list-style-type: none;
+   
+    display: block;
+   color:gray;
+    font-family: '黑体';
+    font-size:16px;
+}
+.select{
+    margin-top:10%;
+    font-size:16px;
+    color:gray;
+    font-family: '黑体';
+    border:none;
+    background-color: rgba(0,0,0,.0);
 }

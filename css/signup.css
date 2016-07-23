@@ -75,17 +75,25 @@ height: 23px;
 position: absolute;
 right:13%;
 z-index:5;
-    line-height:40px;
+   
 width:80px; 
 height:40px;
     list-style-type: none;
    
+    
+  
+}
+.send{
     display: block;
-   color:gray;
+     color:gray;
     font-family: '黑体';
     font-size:13px;
+    background-color:rgba(0,0,0,.0);
+    border:none;
+     line-height:40px;
+       -webkit-appearance:none;
+    outline:none;
 }
-
 
 .input_style{
       padding-left: 42px;

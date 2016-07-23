@@ -5,10 +5,13 @@
     <!--引入样式表-->
     <link rel ="stylesheet" href="css/share.css">
     <link rel ="stylesheet" href="css/buygift.css">
+    <link rel="stylesheet" href="css/remodal.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
     <!--引用JQ Mobile-->
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
+       <script src="js/remodal.js"></script>
     <title>单程票</title>
     <script>
         
@@ -16,6 +19,34 @@
        document.getElementById('from').value = "";
          document.getElementById('to').value = "";
        }
+    </script>
+    <script>
+         <script>
+      $(document).on('opening', '.remodal', function () {
+    console.log('opening');
+  });
+
+  $(document).on('opened', '.remodal', function () {
+    console.log('opened');
+  });
+
+  $(document).on('closing', '.remodal', function (e) {
+    console.log('closing' + (e.reason ? ', reason: ' + e.reason : ''));
+  });
+
+  $(document).on('closed', '.remodal', function (e) {
+    console.log('closed' + (e.reason ? ', reason: ' + e.reason : ''));
+  });
+
+  $(document).on('confirmation', '.remodal', function () {
+    console.log('confirmation');
+  });
+
+  $(document).on('cancellation', '.remodal', function () {
+    console.log('cancellation');
+  });
+
+    </script>
     </script>
 </head>
 <body class="body_gray">
@@ -46,12 +77,27 @@
          <div class="btns">
              
              <input type="button" class="btn_rest" value="重置" onclick="rest()" />
-              <a href=""><input type="button" class="btn_ok" value="确定"/></a>
-              <a href=""><input type="button" class="btn_history" value="历史"/></a>
+               <a href="#total"><input type="button" class="btn_ok" value="确定"/></a>
+              <a href="orderhistory.html"><input type="button" class="btn_history" value="历史"/></a>
              
          </div>
          
        </div>
+       
+       <div id="bind" class="remodal" data-remodal-id="total" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+           
+  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+  <div>
+    <h3 id="modal1Title"><span id="total" style="font-family:'黑体';font-size:22px;color:black;">合计：3元</span></h3>
+    <p><span id="ordernum" style="font-family:'黑体';font-size:16px;color:black;">订单号:12345678901234567</span></p>
+    <p><span id="fromto" style="font-family:'黑体';font-size:19px;color:black;">新街口--大行宫</span></p>
+   
+    
+  </div>
+  <br>
+  <button data-remodal-action="cancel" class="remodal-cancel">取消</button>
+  <button data-remodal-action="confirm" class="remodal-confirm">结算</button>
+</div>
 
     <div name="footer"  class="footer">
         

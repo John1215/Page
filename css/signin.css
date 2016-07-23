@@ -18,6 +18,8 @@
 @media screen and (max-height:560px) {
    .bg{
         height:115px;
+      
+         background-image: url(/img/signbg_s.png) ;
     }
     .head{
         height:80px;
@@ -31,7 +33,21 @@
         margin-top:66%;
     }
 }
-
+@media screen and (min-height:560px) and (max-width:371px){
+    .bg{
+         background-image: url(/img/signbg_m.png) ;
+    }
+}
+@media screen and (min-height:560px) and (min-width:372px) and (max-width:420px){
+    .bg{
+         background-image: url(/img/signbg_l.png) ;
+    }
+}
+@media screen (min-width:421px){
+    bg{
+         background-image: url(/img/signbg_xl.png) ;
+    }
+}
 
 .div_input{
     height: 40%;
@@ -48,9 +64,9 @@
 .icon_user{
 position: absolute;
 left: 12%;
-    top:35%;
+    top:31.5%;
 z-index:5;
-background-image: url(1.png); 
+background-image: url(/img/signup/phone.png); 
 background-repeat: no-repeat; 
 background-position: 0px 0px; 
 width: 23px; 
@@ -84,9 +100,9 @@ height: 23px;
 .icon_password{
 position: absolute;
 left: 12%;
-    top:35%;
+    top:31.5%;
 z-index:5;
-background-image: url(1.png); 
+background-image: url(/img/signup/password.png); 
 background-repeat: no-repeat; 
 background-position: 0px 0px; 
 width: 23px; 
@@ -109,7 +125,8 @@ height: 23px;
 .bg{
     width:100%;
 /*    height:30%;*/
-    background:red;
+   
+    background-repeat: no-repeat; 
     margin:0px auto;
     position:absolute;
     z-index:9
@@ -118,15 +135,18 @@ height: 23px;
 .div_head{
     width:100%;
     z-index:999;
-/*    background:rgba(0,0,0,.3);*/
     position:absolute;
 }
 .head{
-    background-color: aqua;
-    border-radius: 100%;
+    
+}
+#headimg{
+   border-radius: 100%;
     border-width:2px;
     border-style: solid;
     border-color: white;
+    width:100%;
+        
 }
 /*登录按钮*/
 .div_signin{

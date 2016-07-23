@@ -5,17 +5,42 @@
  
     <link rel ="stylesheet" href="css/purchase_record.css">
     <link rel ="stylesheet" href="css/share.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.monthpicker.css"> 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
-    <script  type="text/javascript">
-        $(function(){
-	
-	$('#month').monthpicker({
-		years: [2015, 2014, 2013, 2012, 2011],
-        topOffset: 6
-	})
-});
+    <script src="js/mobiscroll.core.js"></script>
+    <script src="js/mobiscroll.widget.js"></script>
+    <script src="js/mobiscroll.scroller.js"></script>
+    <script src="js/mobiscroll.util.datetime.js"></script>
+    <script src="js/mobiscroll.datetimebase.js"></script>
+    <script src="js/mobiscroll.widget.ios.js"></script>
+    <script src="js/mobiscroll.i18n.zh.js"></script>
+    <link href="css/mobiscroll.animation.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.widget.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.widget.ios.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.scroller.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.scroller.ios.css" rel="stylesheet" type="text/css" />
+    <title>消费记录</title>
+    <script>
+    $(document).ready(function(){
+        var month =new Date().getMonth()+1;
+        $("#time").val(new Date().getFullYear()+'.'+month);
+//       $.ajax({ });
+       
+       
+        
+    });
+      
+        
+    </script>
+   
+    <script> 
+        
+         $("#test").click(function(){
+           
+           
+//           $("#record").html("<p>"+$("#record").val()+"</p>");
+           alert("ttt");
+       });
     </script>
 </head>
 <body class="body_gray">
@@ -28,87 +53,56 @@
         </div>
         <div data-role="main" id="main" class="main">
            <div id="bord">
-               <div id="time">
-<!--                       <input type="button" value="2016年" class="year"/>-->
-<!--                       <input type="button" id="month" value="6月" class="month"/>-->
-            <div class="year_div">
-                 <select id="content" name="year" class="year">
-<option value="2014" class="option">2014</option>
-<option value="2015" class="option">2015</option>        
-           </select>
-            </div>
-             <div class="month_div">
-              <select id="content" name="month" class="month">
-<option value="1" class="option">1月</option>
-<option value="2" class="option">2月</option></select></div>
+               <div id="div_time" class="time">
+                 <input type="button" value="时间" class="title"/>
+                 <input id="time" type="button" value="" class="number" />
                </div>
                <div id="expends">
                     <input type="button" value="消费" class="title"/>
-                   <input id="expends_m" type="button" value="150.0" class="money"/>
+                   <input id="expends_m" type="button" value="150.0" class="number"/>
                </div>
                <div id="balance">
-                   <input type="button" value="余额" class="title"/>
-                   <input  type="button" value="7.0" class="money"/>
+                   <input id="test" type="button" value="余额" class="title"/>
+                   <input  type="button" value="7.0" class="number"/>
                </div>
            </div>
-            <div id="div_line"></div>
            <div id="record">
+<!--
              <div class="templet_div">
                 <div class="templet_div_half"><span class="templet_city">南京</span><span class="templet_time">2016.6.2</span></div>
                  <div class="templet_div_half"><span class="templet_way">新街口--大行宫</span><span class="templet_money">4元</span></div>
              </div>
-             <div class="templet_div">
-                <div class="templet_div_half"><span class="templet_city">南京</span><span class="templet_time">2016.6.2</span></div>
-                 <div class="templet_div_half"><span class="templet_way">新街口--大行宫</span><span class="templet_money">4元</span></div>
-             </div>
-             <div class="templet_div">
-                <div class="templet_div_half"><span class="templet_city">南京</span><span class="templet_time">2016.6.2</span></div>
-                 <div class="templet_div_half"><span class="templet_way">新街口--大行宫</span><span class="templet_money">4元</span></div>
-             </div>
-             <div class="templet_div">
-                <div class="templet_div_half"><span class="templet_city">南京</span><span class="templet_time">2016.6.2</span></div>
-                 <div class="templet_div_half"><span class="templet_way">新街口--大行宫</span><span class="templet_money">4元</span></div>
-             </div>
-             <div class="templet_div">
-                <div class="templet_div_half"><span class="templet_city">南京</span><span class="templet_time">2016.6.2</span></div>
-                 <div class="templet_div_half"><span class="templet_way">新街口--大行宫</span><span class="templet_money">4元</span></div>
-             </div>
-             <div class="templet_div">
-                <div class="templet_div_half"><span class="templet_city">南京</span><span class="templet_time">2016.6.2</span></div>
-                 <div class="templet_div_half"><span class="templet_way">新街口--大行宫</span><span class="templet_money">4元</span></div>
-             </div>
-             <div class="templet_div">
-                <div class="templet_div_half"><span class="templet_city">南京</span><span class="templet_time">2016.6.2</span></div>
-                 <div class="templet_div_half"><span class="templet_way">新街口--大行宫</span><span class="templet_money">4元</span></div>
-             </div>
-
-             <div class="templet_div">
-                <div class="templet_div_half"><span class="templet_city">南京</span><span class="templet_time">2016.6.2</span></div>
-                 <div class="templet_div_half"><span class="templet_way">新街口--大行宫</span><span class="templet_money">4元</span></div>
-             </div>
-             <div class="templet_div">
-                <div class="templet_div_half"><span class="templet_city">南京</span><span class="templet_time">2016.6.2</span></div>
-                 <div class="templet_div_half"><span class="templet_way">新街口--大行宫</span><span class="templet_money">4元</span></div>
-             </div>
-              <div class="templet_div">
-                <div class="templet_div_half"><span class="templet_city">南京</span><span class="templet_time">2016.6.2</span></div>
-                 <div class="templet_div_half"><span class="templet_way">新街口--大行宫</span><span class="templet_money">4元</span></div>
-             </div>
-                <div class="templet_div">
-                <div class="templet_div_half"><span class="templet_city">南京</span><span class="templet_time">2016.6.2</span></div>
-                 <div class="templet_div_half"><span class="templet_way">新街口--大行宫</span><span class="templet_money">4元</span></div>
-             </div>
-                <div class="templet_div">
-                <div class="templet_div_half"><span class="templet_city">南京</span><span class="templet_time">2016.6.2</span></div>
-                 <div class="templet_div_half"><span class="templet_way">新街口--大行宫</span><span class="templet_money">4元</span></div>
-             </div>
+--> 
 
              
-             <div style="height:60px;width:100%;margin-top:0px;"></div>
+             
            </div>
-           
+           <div style="height:60px;width:100%;margin-top:0px;"></div>
         </div> 
         <!--底部栏-->
+        <script type="text/javascript">
+        $(function () {
+			var nowData=new Date();
+	        var opt= { 
+	        	theme:'ios', //设置显示主题 
+                mode:'scroller', //设置日期选择方式，这里用滚动
+                display:'bottom', //设置控件出现方式及样式
+                preset : 'date', //日期:年 月 日 时 分
+//                minDate: nowData, 
+				maxDate:new Date(nowData.getFullYear(),nowData.getMonth()),
+             dateFormat: 'yy.m', // 日期格式
+              dateOrder: 'yym', //面板中日期排列格式
+                stepMinute: 5, //设置分钟步长
+                yearText:'年', 
+                monthText:'月',
+                dayText:'日',
+               hourText:'时',
+               minuteText:'分',
+              lang:'zh' //设置控件语言};
+            };
+           $('#time').mobiscroll(opt);
+        });
+    </script>
 <div name="footer"  class="footer">
         
         <a href="main.html"><div id="home" class="footer_btn"><div class="footer_btn_icon"><img class="barbtnimg" src="img/footer_home.png"/></div><div class="footer_btn_text">首页</div></div></a>

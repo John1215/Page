@@ -12,19 +12,24 @@
                           var type =href.charAt(href.length - 1 );
                         switch(type){
                             case '2':
+                                document.title="路线";
                                 document.getElementById("map").src="http://m.amap.com/subway/#city=3201";
                                 document.getElementById("title").innerText="路线";
                                 break;
                             case '1':
+                                 document.title="地图";
                                   document.getElementById("map").src="http://m.amap.com/navigation/index/";
                                  document.getElementById("title").innerText="地图";
                                 break;
                             case '3':
+                                 document.title="附近";
                                   document.getElementById("map").src="http://m.amap.com/nearby/index/";
                                  document.getElementById("title").innerText="附近";
                                 break;
                             default:
+                                 document.title="错误!";
                                 document.getElementById("map").src="";
+                                document.getElementById("title").innerText="请刷新！";
                         }
                        }
     </script>
