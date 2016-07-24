@@ -1,183 +1,178 @@
-
 @media screen and (min-height:561px) {
-/*
-    .bg{
-        height:160px;
+    .head {
+        height: 90px;
+        width: 90px;
     }
-*/
-     .head{
-        height:90px;
-        width:90px;
+    .div_head {
+        margin-top: 14%;
     }
-    .div_head{
-        margin-top:14%;
+    .div_input {
+        margin-top: 50%;
     }
-    .div_input{
-     margin-top:50%;
-    }
-    .btn_ok{
-       margin-top: 19%;
+    .btn_ok {
+        margin-top: 19%;
     }
 }
+
 @media screen and (max-height:560px) {
-/*
+    /*
    .bg{
         height:115px;
     }
 */
-    .head{
-        height:80px;
-        width:80px;
+    .head {
+        height: 80px;
+        width: 80px;
     }
-    .div_head{
-        margin-top:20px;
+    .div_head {
+        margin-top: 20px;
     }
-      .div_input{
-        margin-top:40%;
+    .div_input {
+        margin-top: 40%;
     }
-    .btn_ok{
-         margin: 9% auto;
+    .btn_ok {
+        margin: 9% auto;
     }
 }
 
-
-.div_inputs{
+.div_inputs {
     height: 40%;
     width: 100%;
-/*    margin-top:72%;*/
-/*    background-color: darkorchid;*/
+    /*    margin-top:72%;*/
+    /*    background-color: darkorchid;*/
 }
+
+
 /*用户名框*/
-#div_name{
+
+#div_name {
     margin-top: 35%;
 }
-#div_2{
-      margin-top:18px;
+
+#div_2 {
+    margin-top: 18px;
 }
-.div_input{
-   position: relative;
-    width:100%;height:30px;
+
+.div_input {
+    position: relative;
+    width: 100%;
+    height: 30px;
     text-align: center;
 }
 
-.icon_style{
-position: absolute;
-left: 14%;
-    top:30%;
-z-index:5;
-background-repeat: no-repeat; 
-background-position: 0px 0px; 
-width: 23px; 
-height: 23px;
+.icon_style {
+    position: absolute;
+    left: 14%;
+    top: 30%;
+    z-index: 5;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 23px;
+    height: 23px;
     list-style-type: none;
-}
-.btn_code{
-position: absolute;
-right:13%;
-z-index:5;
-   
-width:80px; 
-height:40px;
-    list-style-type: none;
-   
-    
-  
-}
-.send{
-    display: block;
-     color:gray;
-    font-family: '黑体';
-    font-size:13px;
-    background-color:rgba(0,0,0,.0);
-    border:none;
-     line-height:40px;
-       -webkit-appearance:none;
-    outline:none;
 }
 
-.input_style{
-      padding-left: 42px;
-        border:none;
-        background-color: white;
-    height:40px;
-    width:66%;
-    font-family:'黑体';
-    font-size:18px;
-    color:lightgray;
-    -webkit-appearance:none;
-    outline:none;
+.btn_code {
+    position: absolute;
+    right: 13%;
+    z-index: 5;
+    width: 80px;
+    height: 40px;
+    list-style-type: none;
+}
+
+.send {
+    display: block;
+    color: gray;
+    font-family: '黑体';
+    font-size: 13px;
+    background-color: rgba(0, 0, 0, .0);
+    border: none;
+    line-height: 40px;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.input_style {
+    padding-left: 42px;
+    border: none;
+    background-color: white;
+    height: 40px;
+    width: 66%;
+    font-family: '黑体';
+    font-size: 18px;
+    color: lightgray;
+    -webkit-appearance: none;
+    outline: none;
 }
 
 #icon_name {
-    background-image: url(/img/signup/name.png); 
+    background-image: url(/img/signup/name.png);
 }
-#icon_phone{
-     background-image: url(/img/signup/phone.png); 
+
+#icon_phone {
+    background-image: url(/img/signup/phone.png);
 }
-#icon_password{
-    background-image: url(/img/signup/password.png); 
+
+#icon_password {
+    background-image: url(/img/signup/password.png);
 }
-#icon_check{
-    background-image: url(/img/signup/check.png); 
+
+#icon_check {
+    background-image: url(/img/signup/check.png);
 }
-#icon_code{
-    background-image: url(/img/signup/code.png); 
+
+#icon_code {
+    background-image: url(/img/signup/code.png);
 }
-.div_head{
-    width:100%;
-    z-index:999;
-/*    background:rgba(0,0,0,.3);*/
-    position:absolute;
+
+.div_head {
+    width: 100%;
+    z-index: 999;
+    /*    background:rgba(0,0,0,.3);*/
+    position: absolute;
 }
-.head{
-    margin:0px auto;
+
+.head {
+    margin: 0px auto;
 }
-/*登录按钮*/
-.btn_ok{
+
+.btn_ok {
     width: 45%;
     height: 40px;
-    border-radius:3px;
-        border-style:solid;
-        border-width:1px;
-    background-color:#49B1FA;
-    border-color:#49B1FA;
-    color:white;
-    font-family:'黑体';
-    -webkit-appearance:none;
-    outline:none;
+    border-radius: 3px;
+    border: none;
 }
-/*主界面*/
-/*底部*/
-#bottom{
-    left:0px;bottom:2px;
-/*    background-color: aqua;*/
+
+#bottom {
+    left: 0px;
+    bottom: 2px;
     width: 100%;
-    height:30px;
-    position:fixed;
+    height: 30px;
+    position: fixed;
 }
-/*忘记密码*/
-#bottom_forget{
-    margin-left:3%;
-    text-decoration:none;
-    color:#49B1FA;
-    font-family:'黑体';
+
+#bottom_forget {
+    margin-left: 3%;
     float: left;
-    font-size: 16px;
-    
 }
-/*还没注册*/
-#bottom_signup{
-    margin-right:3%;
-    text-decoration:none;
-    color:#49B1FA;
-    font-family:'黑体';
+
+#bottom_signup {
+    margin-right: 3%;
     float: right;
-    font-size: 16px;
 }
-.head_img{
+
+#bottom_forget,
+#bottom_signup {
+    text-decoration: none;
+    font-size: 16px;
+    color: #49B1FA;
+}
+
+.head_img {
     border-radius: 100%;
-    border-width:2px;
+    border-width: 2px;
     border-style: solid;
     border-color: white;
-    height:100%;
+    height: 100%;
 }

@@ -1,204 +1,160 @@
 @media screen and (min-height:561px) {
-    .submit{
-        margin:8% auto;
+    .submit {
+        margin: 8% auto;
     }
-    .panel_pay{ height:66px;}
-    .head{
-        height:50px;
-        width:50px;
-        margin-top:8px;
+    .panel_pay {
+        height: 66px;
     }
-    .bankcard_name{
-        font-size:18px;
+    .head {
+        height: 50px;
+        width: 50px;
+        margin-top: 8px;
     }
-    .bankcard_num{
-        font-size:15px;
+    .bankcard_name {
+        font-size: 18px;
     }
-    .money_text{
-        margin:8% auto;
+    .bankcard_num {
+        font-size: 15px;
     }
-    .addcard{
-         width:48px;
-    height:48px;
+    .money_text {
+        margin: 8% auto;
+    }
+    .addcard {
+        width: 48px;
+        height: 48px;
     }
 }
+
 @media screen and (max-height:560px) {
-    .submit{
-        margin:5% auto;
+    .submit {
+        margin: 5% auto;
     }
-    .panel_pay{ height:56px;}
-    .head{
-        height:40px;
-        width:40px;
-         margin-top:8px;
+    .panel_pay {
+        height: 56px;
     }
-     .bankcard_name{
-        font-size:16px;
+    .head {
+        height: 40px;
+        width: 40px;
+        margin-top: 8px;
     }
-    .bankcard_num{
-        font-size:13px;
+    .bankcard_name {
+        font-size: 16px;
     }
-    .money_text{
-        margin:5% auto;
+    .bankcard_num {
+        font-size: 13px;
     }
-     .addcard{
-         width:40px;
-    height:40px;
+    .money_text {
+        margin: 5% auto;
+    }
+    .addcard {
+        width: 40px;
+        height: 40px;
     }
 }
-.panel_pay{
-/*    height:75px;*/
-    width:100%;
- background-color:white;
-    border:none;
-/*
-    border-left:none;
-    border-right:none;
-    border-top-style:solid;
-    border-top-width: 1px;
-    border-top-color:#f0f0f0;
-    border-bottom-style:solid;
-    border-bottom-width: 1px;
-    border-bottom-color:#f0f0f0;
-*/
-    margin-top:5px;
-/*    box-shadow: 0px 1px 0px #f0f0f0;*/
-}
-.bankcard_name{
-   height:60%;
-    width:50%;
-   background-color:rgba(0,0,0,.0);
-   float:left;
-    border:none;
-    font-family: '黑体';
-/*    font-size: 20px;*/
-    font-weight:600;
-   padding-bottom: 6px;
-    margin-left:3%;
-    text-decoration:none;
-     outline: none;
-}
-.bankcard_num{
-   height:39%;
-    width:50%;
-  background-color:rgba(0,0,0,.0);
-    margin-bottom:0px;
-    float: left;
-    border:none;
-    font-family: '黑体';
-/*    font-size: 14px;*/
-    color:gray;
-       padding-bottom:11px;
-     margin-left:3%;
-     -webkit-appearance:none;
-    outline: none;
-}
-.money_text{
-    height:40px;
+
+.panel_pay {
+    width: 100%;
     background-color: white;
-    border-radius:3px;
-    width:75%;
-/*    margin:0px auto;*/
-    border:none;
-    font-family:'黑体';
-    color:lightgrey;
+    border: none;
+    margin-top: 5px;
+}
+
+.bankcard_name {
+    height: 60%;
+    width: 50%;
+    background-color: rgba(0, 0, 0, .0);
+    float: left;
+    border: none;
+    font-weight: 600;
+    padding-bottom: 6px;
+    margin-left: 3%;
+}
+
+.bankcard_num {
+    height: 39%;
+    width: 50%;
+    background-color: rgba(0, 0, 0, .0);
+    margin-bottom: 0px;
+    float: left;
+    border: none;
+    color: gray;
+    padding-bottom: 11px;
+    margin-left: 3%;
+}
+
+.money_text {
+    height: 40px;
+    background-color: white;
+    width: 75%;
+    color: lightgrey;
     text-align: center;
-    font-size:20px;
-     -webkit-appearance:none;
-     outline: none;
-/*    box-shadow: 0px 1px 0px #f0f0f0;*/
+    font-size: 20px;
 }
-  #bind{
-      font-family:'黑体';
-    }
-.head{
-/*
-    height:50px;
-    width:50px;
-*/
+
+#bind {
+    font-family: '黑体';
+}
+
+.head {
     background-color: aqua;
-    float:left;
-    margin-left:4%;
-    margin-right:4%;
+    float: left;
+    margin-left: 4%;
+    margin-right: 4%;
     border-radius: 100%;
-   boeder:none;
-/*    margin-top:10px;*/
+    boeder: none;
+    /*    margin-top:10px;*/
 }
-.submit{
+
+.submit {
     display: block;
-/*      margin: 10% auto;*/
     width: 55%;
     height: 35px;
-    border-radius:3px;
-    background-color:red;
-    border:none;
-    color:white;
-    font-family:'黑体';
-    font-size:20px;
-    -webkit-appearance:none;
-    outline:none;
-/*    box-shadow: 0px 1px 0px #f0f0f0;*/
+    font-family: '黑体';
+    font-size: 20px;
+    -webkit-appearance: none;
+    outline: none;
+    /*    box-shadow: 0px 1px 0px #f0f0f0;*/
 }
-/*
-.addcard{
-   
-   margin: 0% auto;
+
+.active {
+    background-color: red;
 }
-*/
-/*
-.add{
-    margin-top:5%;
-    margin-bottom:3%;
-    text-align: center;
-    font-size:15px;
-    color:gray;
-    font-family:'黑体';
-    font-weight: 400;
-}
-*/
-.active{
-    background-color:red;
-}
-.bind_input
-{
-    width:85%;
-    height:35px;
-    outline:none;
-     -webkit-appearance:none;
-     outline: none;
-    background-color:#f9f9fb;
-    border-radius:2px;
-    border:none;
-    font-size:18px;
+
+.bind_input {
+    width: 85%;
+    height: 35px;
+    background-color: #f9f9fb;
+    font-size: 18px;
     color: gray;
-    font-family:'黑体';
-    padding-left:6px;
-    text-align:left;
+    padding-left: 6px;
+    text-align: left;
 }
-.div_code{
-       position: relative;
+
+.div_code {
+    position: relative;
     text-align: center;
 }
-.btn_code{
-position: absolute;
-right:8%;
-z-index:5;
-    margin-top:1px;
-    line-height:33px;
-width:80px; 
-height:40px;
+
+.btn_code {
+    position: absolute;
+    right: 8%;
+    z-index: 5;
+    margin-top: 1px;
+    line-height: 33px;
+    width: 80px;
+    height: 40px;
     list-style-type: none;
-   
     display: block;
-   color:gray;
+    color: gray;
     font-family: '黑体';
-    font-size:16px;
+    font-size: 16px;
 }
-.select{
-    margin-top:10%;
-    font-size:16px;
-    color:gray;
+
+.select {
+    margin-top: 10%;
+    font-size: 16px;
+    color: gray;
     font-family: '黑体';
-    border:none;
-    background-color: rgba(0,0,0,.0);
+    border: none;
+    background-color: rgba(0, 0, 0, .0);
 }

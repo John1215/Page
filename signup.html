@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1" charset="utf-8">
     <!--引入样式表-->
-    <link rel ="stylesheet" href="css/signup.css">
-     <link rel ="stylesheet" href="css/share.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/share.css">
     <!--引用JQ Mobile-->
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
     <script src="js/jquery.min.js"></script>
@@ -12,95 +13,103 @@
     <script>
     </script>
     <title>注册</title>
-   
+
 </head>
-    <body class="body_gray">
-        <div data-role="main" id="main" class="main">
-        
-            <div id="bg" class="bg"></div>
-           
-             <div class="div_head" id="div_head">
+
+<body class="body gray">
+    <div data-role="main" id="main" class="main">
+
+        <div id="bg" class="bg"></div>
+
+        <div class="div_head" id="div_head">
             <div id="headimg" class="head">
-                <img src="img/logo/logo3.png" class="head_img"/>
-            </div></div>
-            <form name ="signup" method="post" action="signup.php">
+                <img src="img/logo/logo3.png" class="head_img" />
+            </div>
+        </div>
+        <form name="signup" method="post" action="signup.php">
             <div class="div_inputs">
-            
-            <div id="div_1" class="div_input">
-            <li id="icon_name" class="icon_style"></li>
-            <input id="name" class="input_style" type="text" placeholder="用户名" maxlength="6"/>
-        </div>
-          
-            <div id="div_2" class="div_input">
-            <li id="icon_phone" class="icon_style"></li>
-            <input id="phone" class="input_style" type="text" placeholder="手机号" maxlength="11"/>
-        </div>
-         
-         
-         <div id="div_2" class="div_input">
-            <li id="icon_password" class="icon_style"></li>
-            <input id="password" class="input_style" type="text" placeholder="密码" maxlength="12"/>
-        </div>
-        
-        <div id="div_2" class="div_input">
-            <li id="icon_check" class="icon_style"></li>
-            <input id="check" class="input_style" type="password" placeholder="确认密码" maxlength="12"/>
-        </div>
-        
-        <div id="div_2" class="div_input">
-            <li id="icon_code" class="icon_style"></li>
-            <li class="btn_code"><input id="send" type="button" value="获取验证码" class="send"/></li>
-            <input id="code" class="input_style" type="text" placeholder="短信验证码" maxlength="6"/>
-            
-        </div>
-         <a href="">
-           <input id="ok" type="button" class="btn_ok" value="确 认"/></a>
-           </div>
-        </div
-        >
+
+                <div id="div_1" class="div_input">
+                    <li id="icon_name" class="icon_style"></li>
+                    <input id="name" class="input_style" type="text" placeholder="用户名" maxlength="6" />
+                </div>
+
+                <div id="div_2" class="div_input">
+                    <li id="icon_phone" class="icon_style"></li>
+                    <input id="phone" class="input_style" type="text" placeholder="手机号" maxlength="11" />
+                </div>
 
 
-         <script>
-          $(function () {
-                $("#send").click(function () {
-                    var phonenum ="13675181817"
-                  $.ajax({
-                      url:"verify.php",type:"POST",
-                          data:{phone:phonenum},
-                  
-                     error: function(){  
-             alert("failed");  
-         },  
-         success: function(){
-             alert("yes")
-         }
-              });
-               });
-            }); 
-             
-        $(function () {
-                $("#ok").click(function () {
-                    var id ="1"
-                  $.ajax({
-                      url:"verify.php",type:"POST",
-                          data:{usrid:id},
-                  
-                     error: function(){  
-             alert("failed");  
-         },  
-         success: function(){
-             alert("yes")
-         }
-              });
-               });
-            });     
+                <div id="div_2" class="div_input">
+                    <li id="icon_password" class="icon_style"></li>
+                    <input id="password" class="input_style" type="text" placeholder="密码" maxlength="12" />
+                </div>
+
+                <div id="div_2" class="div_input">
+                    <li id="icon_check" class="icon_style"></li>
+                    <input id="check" class="input_style" type="password" placeholder="确认密码" maxlength="12" />
+                </div>
+
+                <div id="div_2" class="div_input">
+                    <li id="icon_code" class="icon_style"></li>
+                    <li class="btn_code"><input id="send" type="button" value="获取验证码" class="send" /></li>
+                    <input id="code" class="input_style" type="text" placeholder="短信验证码" maxlength="6" />
+
+                </div>
+                <a href="">
+                    <input id="ok" type="button" class="btn_ok blue font_white" value="确 认" /></a>
+            </div>
+    </div>
+
+
+    <script>
+        $(function() {
+            $("#send").click(function() {
+                var phonenum = "13675181817"
+                $.ajax({
+                    url: "verify.php",
+                    type: "POST",
+                    data: {
+                        phone: phonenum
+                    },
+
+                    error: function() {
+                        alert("failed");
+                    },
+                    success: function() {
+                        alert("yes")
+                    }
+                });
+            });
+        });
+
+        $(function() {
+            $("#ok").click(function() {
+                var id = "1"
+                $.ajax({
+                    url: "verify.php",
+                    type: "POST",
+                    data: {
+                        usrid: id
+                    },
+
+                    error: function() {
+                        alert("failed");
+                    },
+                    success: function() {
+                        alert("yes")
+                    }
+                });
+            });
+        });
     </script>
 
-       
-        <div id="bottom">
+
+    <div id="bottom">
         <a href="" id="bottom_forget">忘记密码</a>
         <a href="" id="bottom_signup">还没注册?</a>
-        </div>
-        
-    </body>
+    </div>
+
+</body>
+
 </html>

@@ -1,73 +1,68 @@
-#notused{
-    width:100%;
-}
-#used{
-     width:100%;
+#notused {
+    width: 100%;
 }
 
-
-.templet_money_used{
-     float:right;
-    color:gray;
-    font-family:'黑体';
-    font-size:17px;
-    margin-right:7px;
-    line-height:30px;
-    font-weight:500;
-    
+#used {
+    width: 100%;
 }
-.templet_div_used{
-    background-color:#f4f4f4;
-    font-family:'黑体';
-    width:100%;
-    height:66px;
-    border-left:none;
-    border-right:none;
+
+.templet_money_used {
+    float: right;
+    color: gray;
+    font-size: 17px;
+    margin-right: 7px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.templet_div_used {
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 66px;
+    border-left: none;
+    border-right: none;
     border-top-color: #f0f0f0;
     border-bottom-color: #f0f0f0;
-    border-top-style:solid;
-    border-bottom-style:solid;
-    border-top-width:1px;
-    border-bottom-width:1px;
-    color:gray;
-}
-.div_title{
-    font-family:'黑体';
-    font-size:20px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
     color: gray;
-   text-align: left;
+}
+
+.div_title {
+    font-size: 20px;
+    color: gray;
+    text-align: left;
     display: block;
-    width:100%;
-    height:40px;
-    margin-top:10px;
-        margin-left:10px;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
-.bord{
-    background:rgba(50,153,205,.8);
-    width:100%;
-    height:80px;
+
+.bord {
+    background: rgba(50, 153, 205, .8);
+    width: 100%;
+    height: 80px;
 }
-.choose{
+
+.choose {
     width: 35%;
-    background-color:rgba(0,0,0,.0);
-    height:100%;
-    overflow:hidden;
-     outline: none;
-        
+    background-color: rgba(0, 0, 0, .0);
+    height: 100%;
+    overflow: hidden;
 }
-.select{
-    font-family:'黑体';
-    color:white;
-    border:none;
-    background-color:rgba(0,0,0,.0);
-    font-size:22px;
-    outline: none;
-    margin:20% auto;
-     -webkit-appearance:none;clip:none;
+
+.select {
+    font-family: '黑体';
+    color: white;
+    border: none;
+    background-color: rgba(0, 0, 0, .0);
+    font-size: 22px;
+    margin: 20% auto;
 }
-.option{
-    background-color:rgba(50,153,205,.8);
-     -webkit-appearance:none;
-      outline:rgba(0,0,0,.0);
-    text-decoration: none;
+
+.option {
+    background-color: rgba(50, 153, 205, .8);
 }

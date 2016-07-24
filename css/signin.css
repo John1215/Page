@@ -1,197 +1,194 @@
-
 @media screen and (min-height:561px) {
-    .bg{
-        height:160px;
+    .bg {
+        height: 160px;
     }
-     .head{
-        height:90px;
-        width:90px;
-         margin:0px auto;
+    .head {
+        height: 90px;
+        width: 90px;
+        margin: 0px auto;
     }
-    .div_head{
-        margin-top:113px;
+    .div_head {
+        margin-top: 113px;
     }
-    .div_input{
-        margin-top:80%;
-    }
-}
-@media screen and (max-height:560px) {
-   .bg{
-        height:115px;
-      
-         background-image: url(/img/signbg_s.png) ;
-    }
-    .head{
-        height:80px;
-        width:80px;
-        margin:0px auto;
-    }
-    .div_head{
-        margin-top:73px;
-    }
-      .div_input{
-        margin-top:66%;
-    }
-}
-@media screen and (min-height:560px) and (max-width:371px){
-    .bg{
-         background-image: url(/img/signbg_m.png) ;
-    }
-}
-@media screen and (min-height:560px) and (min-width:372px) and (max-width:420px){
-    .bg{
-         background-image: url(/img/signbg_l.png) ;
-    }
-}
-@media screen (min-width:421px){
-    bg{
-         background-image: url(/img/signbg_xl.png) ;
+    .div_input {
+        margin-top: 80%;
     }
 }
 
-.div_input{
+@media screen and (max-height:560px) {
+    .bg {
+        height: 115px;
+        background-image: url(/img/signbg_s.png);
+    }
+    .head {
+        height: 80px;
+        width: 80px;
+        margin: 0px auto;
+    }
+    .div_head {
+        margin-top: 73px;
+    }
+    .div_input {
+        margin-top: 66%;
+    }
+}
+
+@media screen and (min-height:560px) and (max-width:371px) {
+    .bg {
+        background-image: url(/img/signbg_m.png);
+    }
+}
+
+@media screen and (min-height:560px) and (min-width:372px) and (max-width:420px) {
+    .bg {
+        background-image: url(/img/signbg_l.png);
+    }
+}
+
+@media screen (min-width:421px) {
+    bg {
+        background-image: url(/img/signbg_xl.png);
+    }
+}
+
+.div_input {
     height: 40%;
     width: 100%;
-/*    margin-top:72%;*/
-/*    background-color: darkorchid;*/
+    /*    margin-top:72%;*/
+    /*    background-color: darkorchid;*/
 }
+
+
 /*用户名框*/
-.div_user{
-   position: relative;width:100%;height:30px;
-    margin-top:35%;
+
+.div_user {
+    margin-top: 35%;
+}
+
+.input_style {
+    padding-left: 38px;
+    border: none;
+    background-color: white;
+    height: 40px;
+    width: 70%;
+    font-size: 20px;
+    color: lightgray;
+}
+
+.div_password,
+.div_user {
+    position: relative;
+    width: 100%;
+    height: 30px;
     text-align: center;
 }
-.icon_user{
-position: absolute;
-left: 12%;
-    top:31.5%;
-z-index:5;
-background-image: url(/img/signup/phone.png); 
-background-repeat: no-repeat; 
-background-position: 0px 0px; 
-width: 23px; 
-height: 23px; 
+
+.div_password {
+    margin-top: 18px;
+}
+
+.icon_password {
+    background-image: url(/img/signup/password.png);
+}
+
+.icon_user {
+    background-image: url(/img/signup/phone.png);
+}
+
+.icon_user,
+.icon_password {
+    position: absolute;
+    left: 12%;
+    top: 31.5%;
+    z-index: 5;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 23px;
+    height: 23px;
     list-style-type: none;
 }
-.input_user{
-      padding-left: 38px;
-        border-bottom-color: #f9f9fb;
-        border-style:solid;
-        border-width:2px;
-        border-top:none;
-     border-left:none;
-    border-right:none;
-        background-color: white;
-    height:40px;
-    width:70%;
-    font-family:'黑体';
-    font-size:20px;
-    color:lightgray;
-    -webkit-appearance:none;
-    outline:none;
+
+.bg {
+    width: 100%;
+    /*    height:30%;*/
+    background-repeat: no-repeat;
+    margin: 0px auto;
+    position: absolute;
+    z-index: 9
 }
-/*密码框*/
-.div_password{
-   position: relative;
-    width:100%;height:30px;
-    margin-top:18px;
-    text-align: center;
-}
-.icon_password{
-position: absolute;
-left: 12%;
-    top:31.5%;
-z-index:5;
-background-image: url(/img/signup/password.png); 
-background-repeat: no-repeat; 
-background-position: 0px 0px; 
-width: 23px; 
-height: 23px; 
-    list-style-type: none;
-}
-.input_password{
-      padding-left: 38px;
-        border:none;
-        background-color: white;
-    height:40px;
-    width:70%;
-    font-family:'黑体';
-    font-size:20px;
-    color:lightgray;
-    -webkit-appearance:none;
-    outline:none;
-}
-/*背景图片*/
-.bg{
-    width:100%;
-/*    height:30%;*/
-   
-    background-repeat: no-repeat; 
-    margin:0px auto;
-    position:absolute;
-    z-index:9
-}
+
+
 /*头像*/
-.div_head{
-    width:100%;
-    z-index:999;
-    position:absolute;
+
+.div_head {
+    width: 100%;
+    z-index: 999;
+    position: absolute;
 }
-.head{
-    
-}
-#headimg{
-   border-radius: 100%;
-    border-width:2px;
+
+.head {}
+
+#headimg {
+    border-radius: 100%;
+    border-width: 2px;
     border-style: solid;
     border-color: white;
-    width:100%;
-        
+    width: 100%;
 }
+
+
 /*登录按钮*/
-.div_signin{
-    width:100%;height:40px;margin-top:18%;text-align:center;
-    
+
+.div_signin {
+    width: 100%;
+    height: 40px;
+    margin-top: 18%;
+    text-align: center;
 }
-.btn_signin{
+
+.btn_signin {
     width: 45%;
     height: 40px;
     margin: 0px auto;
-    border-radius:3px;
-        border-style:solid;
-        border-width:1px;
-    background-color:#49B1FA;
-    border-color:#49B1FA;
-    color:white;
-    font-family:'黑体';
-    -webkit-appearance:none;
-    outline:none;
+    border-radius: 3px;
+    border: none;
+    color: white;
 }
+
+
 /*主界面*/
+
+
 /*底部*/
-#bottom{
-    left:0px;bottom:2px;
-/*    background-color: aqua;*/
+
+#bottom {
+    left: 0px;
+    bottom: 2px;
+    /*    background-color: aqua;*/
     width: 100%;
-    height:30px;
+    height: 30px;
     position: absolute;
 }
+
+
 /*忘记密码*/
-#bottom_forget{
-    margin-left:3%;
-    text-decoration:none;
-    color:#49B1FA;
-    font-family:'黑体';
-    float: left;
+
+#bottom_forget,
+#bottom_signup {
+    text-decoration: none;
+    color: #49B1FA;
     font-size: 16px;
-    
 }
+
+
 /*还没注册*/
-#bottom_signup{
-    margin-right:3%;
-    text-decoration:none;
-    color:#49B1FA;
-    font-family:'黑体';
+
+#bottom_signup {
+    margin-right: 3%;
     float: right;
-    font-size: 16px;
+}
+
+#bottom_forget {
+    margin-left: 3%;
+    float: left;
 }
