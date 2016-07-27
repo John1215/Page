@@ -1,8 +1,9 @@
 @media screen and (min-height:561px) {
     .card {
-        height: 55.5%;
+/*        height: 55.5%;*/
+        height: 50%;
         width: 80%;
-        left: -webkit-calc(10% - 10px);
+        left: -webkit-calc(10% - 11px);
         top: -webkit-calc(29% - 50px);
     }
     .balance {
@@ -12,7 +13,8 @@
 
 @media screen and (max-height:560px) {
     .card {
-        height: 60%;
+/*        height: 60%;*/
+        height: 55%;
         width: 74%;
         left: -webkit-calc(13% - 10px);
         top: -webkit-calc(30% - 50px);
@@ -50,7 +52,8 @@
     background-color: rgba(0, 0, 0, .0);
     position: absolute;
     left: 15%;
-    top: 19%;
+/*    top: 19%;*/
+    top:10%;
 }
 
 #balance {
@@ -58,12 +61,12 @@
     width: 80%;
     height: 13%;
     position: absolute;
-    bottom: 0px;
+    bottom: 2%;
 }
 
 #notice {
     position: absolute;
-    bottom: 15.5%;
+    bottom: 18.5%;
     width: 80%;
     height: 5%;
     left: 10%;
@@ -82,5 +85,5 @@
 
 .balance {
     color: #ff6d1d;
-    font-weight: 600;
+    font-weight: 580;
 }

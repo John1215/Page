@@ -11,13 +11,51 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
     <script>
+      
+        
     </script>
     <title>登录</title>
+    <script>
+          $(document).ready(function(){
+               var va = $(".bg").height() - 41;
+              
+               $(".div_head").css("margin-top",va);
+              
+              
+        });       
+        
+        
+        
+        $(function(){ $("#ok").click(function() {
+               var p = $("#phone").val();
+               var pw = $("#password").val();
+                $.ajax({
+                    url: "http://115.159.181.250:9091/login",
+                    async: true,
+                   type: "get",
+                   data: {
+                        phone: p,
+                        password:pw
+                   },
+                    dataType:"text",
+                   error: function() {
+                        alert("failed");
+                   },
+                    success: function(data){
+                        alert(data);
+                    }
+                });
+                
+            });
+                    
+                    });
+    </script>
+    
 </head>
 
 <body class="body gray">
     <div data-role="main" id="main" class="main">
-        <div id="bg" class="bg"></div>
+        <div id="bg" class="bg"><img src="img/signbg_xl.png" style="width:100%"/></div>
         <div class="div_head" id="div_head">
             <div class="head"><img id="headimg" src="img/headimg.png" /></div>
         </div>
@@ -25,17 +63,16 @@
             <!--用户名-->
             <div class="div_user">
                 <li class="icon_user"></li>
-                <input class="input_style" type="text" placeholder="请输入手机号" maxlength="11" />
+                <input id="phone" class="input_style" type="text" placeholder="请输入手机号" maxlength="11" />
             </div>
             <!--密码-->
             <div class="div_password">
                 <li class="icon_password"></li>
-                <input class="input_style" type="password" placeholder="请输入密码" maxlength="12" />
+                <input id="password" class="input_style" type="password" placeholder="请输入密码" maxlength="12" />
             </div>
             <!--登录按钮-->
             <div class="div_signin">
-                <a href="">
-                    <input type="button" class="btn_signin blue" value="登 录" /></a>
+                    <input  id="ok" type="button" class="btn_signin blue" value="登 录" onclick="signin()" />
             </div>
         </div>
     </div>
@@ -43,11 +80,6 @@
         <a href="" id="bottom_forget">忘记密码</a>
         <a href="" id="bottom_signup">还没注册?</a>
     </div>
-
-
-
-
-
 </body>
 
 </html>

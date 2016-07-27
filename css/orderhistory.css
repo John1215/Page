@@ -29,6 +29,12 @@
     border-bottom-width: 1px;
     color: gray;
 }
+.templet_num {
+    font-size: 15px;
+    margin-left: 7px;
+    float: left;
+    line-height: 30px;
+}
 
 .div_title {
     font-size: 20px;
@@ -48,19 +54,30 @@
 }
 
 .choose {
-    width: 35%;
+    width: 80%;
     background-color: rgba(0, 0, 0, .0);
     height: 100%;
     overflow: hidden;
+    margin:0px auto;
 }
 
-.select {
-    font-family: '黑体';
+.select,.balance {
     color: white;
     border: none;
     background-color: rgba(0, 0, 0, .0);
-    font-size: 22px;
-    margin: 20% auto;
+     line-height:80px;
+/*    margin: 20% auto;*/
+   
+ 
+}
+.select{
+     font-size: 22px;
+     float:left;
+}
+.balance{
+    float:right;
+     font-size: 18px;
+     
 }
 
 .option {

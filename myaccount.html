@@ -8,15 +8,89 @@
     <link rel="stylesheet" href="css/share.css">
     <!--引用JQ Mobile-->
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <script src="js/117.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
     <title>我的账户</title>
+    <script>
+          $(document).ready(function(){
+//          check();
+          $.ajax({
+            url:"",
+             xhrFields:{
+			withCredentials:true
+		},
+              type:"get",
+              dataType:"text",
+              error:function(){
+                  window.location="signin.php";
+              },success:function(){
+                  var rcvd = jQuery.parseJSON(data);
+                  $("#username").val(json.user_name);
+                  $("#balance").val(json.cash);
+                  //city
+                  $("#city").val();
+              }
+              
+              
+              
+          });
+          
+          
+          
+        });
+      
+//        $(function(){
+//           $("#consume").click(function(){
+//             $.ajax({
+//            url:"record.php?type=c",
+//             xhrFields:{
+//			withCredentials:true
+//		},
+//              type:"get",
+//              dataType:"text",
+//              error:function(){
+//                  window.location="signin.php";
+//              },success:function(){
+//                  
+//              }
+//              
+//              
+//              
+//          });
+//           });
+//            
+//            $("#recharge").click(function(){
+//                   $.ajax({
+//            url:"record.php?type=r",
+//             xhrFields:{
+//			withCredentials:true
+//		},
+//              type:"get",
+//              dataType:"text",
+//              error:function(){
+//                  window.location="signin.php";
+//              },success:function(){
+//                 
+//              }
+//              
+//              
+//              
+//          });
+//                
+//            });
+//            
+//            
+//        });
+    
+    
+    </script>
 </head>
 
 <body class="body gray">
     <div id="content" class="content">
-        <div class="header blue">
-            <a href="main.html">
+        <div class="header blue shadow_black">
+            <a href="javascript:history.go(-1)">
                 <div class="barbtnL"><img class="barbtnimg" src="img/back.png" /></div>
             </a>
             <span class="header_title">我的账户</span>
@@ -59,7 +133,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="record.html?c">
+                   <a href="record.html?type=1">
                     <div class="panel white b_b">
                         <div class="panel_pic_l">
                             <img src="img/myaccount/p_record.png" class="panel_img" />
@@ -69,8 +143,8 @@
                             <img src="img/myaccount/go.png" class="panel_img" />
                         </div>
                     </div>
-                </a>
-                <a href="record.html?r">
+                    </a>
+                    <a href="record.html?type=2">
                     <div class="panel white b_b">
                         <div class="panel_pic_l">
                             <img src="img/myaccount/r_record.png" class="panel_img" />
@@ -80,7 +154,7 @@
                             <img src="img/myaccount/go.png" class="panel_img" />
                         </div>
                     </div>
-                </a>
+                    </a>
                 <a href="">
                     <div class="panel white b_b">
                         <div class="panel_pic_l">

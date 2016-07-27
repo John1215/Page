@@ -9,10 +9,41 @@
     <!--引用JQ Mobile-->
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
     <script src="js/jquery.min.js"></script>
+    <script src="js/117.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
     <script>
     </script>
     <title>我的二维码</title>
+    <script>
+          $(document).ready(function(){
+//          check();
+          $.ajax({
+            url:"",
+             xhrFields:{
+			withCredentials:true
+		},
+              type:"get",
+              dataType:"text",
+              error:function(){
+                  window.location="signin.php";
+              },success:function(){
+                  var rcvd = jQuery.parseJSON(data);
+//                  $(".username").html(json.user_name);
+                  $(".balance").html(json.cash);
+              }
+              
+              
+              
+          });
+          
+          
+          
+        });
+    
+    
+    
+    
+    </script>
 </head>
 
 <body class="body blue">
@@ -21,7 +52,7 @@
 
         <div class="header blue">
 
-            <a href="main.html">
+            <a href="javascript:history.go(-1)">
                 <div class="barbtnL"><img class="barbtnimg" src="img/back.png" /></div>
             </a>
 
@@ -33,7 +64,7 @@
 
         <div data-role="main" class="main">
             <div id="card" class="card">
-                <div id="qcode_logo"><img src="img/headimg.png" class="logo" /></div>
+<!--                <div id="qcode_logo"><img src="img/headimg.png" class="logo" /></div>-->
                 <div id="qcode">
                     <img id="qrcode" class="qrcode" src="img/QRcode.png" />
                 </div>

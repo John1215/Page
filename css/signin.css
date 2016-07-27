@@ -1,55 +1,18 @@
 @media screen and (min-height:561px) {
-    .bg {
-        height: 160px;
-    }
-    .head {
-        height: 90px;
-        width: 90px;
-        margin: 0px auto;
-    }
-    .div_head {
-        margin-top: 113px;
-    }
+
     .div_input {
         margin-top: 80%;
     }
 }
 
-@media screen and (max-height:560px) {
-    .bg {
-        height: 115px;
-        background-image: url(/img/signbg_s.png);
-    }
-    .head {
-        height: 80px;
-        width: 80px;
-        margin: 0px auto;
-    }
-    .div_head {
-        margin-top: 73px;
-    }
+@media screen and (max-height:560px){
     .div_input {
         margin-top: 66%;
     }
 }
 
-@media screen and (min-height:560px) and (max-width:371px) {
-    .bg {
-        background-image: url(/img/signbg_m.png);
-    }
-}
 
-@media screen and (min-height:560px) and (min-width:372px) and (max-width:420px) {
-    .bg {
-        background-image: url(/img/signbg_l.png);
-    }
-}
 
-@media screen (min-width:421px) {
-    bg {
-        background-image: url(/img/signbg_xl.png);
-    }
-}
 
 .div_input {
     height: 40%;
@@ -110,8 +73,6 @@
 
 .bg {
     width: 100%;
-    /*    height:30%;*/
-    background-repeat: no-repeat;
     margin: 0px auto;
     position: absolute;
     z-index: 9
@@ -125,8 +86,11 @@
     z-index: 999;
     position: absolute;
 }
-
-.head {}
+.head {
+        height: 82px;
+        width: 82px;
+        margin: 0px auto;
+    }
 
 #headimg {
     border-radius: 100%;
@@ -156,10 +120,7 @@
 }
 
 
-/*主界面*/
 
-
-/*底部*/
 
 #bottom {
     left: 0px;
@@ -179,7 +140,6 @@
     color: #49B1FA;
     font-size: 16px;
 }
-
 
 /*还没注册*/
 

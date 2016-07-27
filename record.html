@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/record.css">
     <link rel="stylesheet" href="css/share.css">
     <script src="js/jquery.min.js"></script>
+    <script src="js/117.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
     <script src="js/mobiscroll.core.js"></script>
     <script src="js/mobiscroll.widget.js"></script>
@@ -23,40 +24,46 @@
     <title></title>
     <script>
         $(document).ready(function() {
+//           check();
             var type = location.href.charAt(location.href.length - 1);
+            var month = new Date().getMonth() + 1;
+             $("#time").val(new Date().getFullYear() + '.' + month);
+            var time =$("#time").val().replace('.','-');
+            alert(time);
             switch (type) {
-                case 'c':
+//消费记录
+                case '1':
                     document.title = "消费记录";
                     $("#header_title").text("消费记录");
-                    $("#consume_title").val("消费")
-                    var month = new Date().getMonth() + 1;
-                    $("#time").val(new Date().getFullYear() + '.' + month);
-                    //       $.ajax({ });
-                    $("#refresh").bind("click", function() {
-                        $("#record").html("<p>" + $("#time").val() + "</p>");
-                        $("#consume").val("15.0");
-                        $("#balance").val("60.0");
-                    });
-
+                    $(".header").addClass("blue shadow_blue");
+                     $("#bord").addClass("darkblue");
+                    $("#consume_title").val("消费");
+                    document.getElementById('refresh').src="img/refesh_c.png";
                     break;
-
-                case 'r':
-
+//充值记录
+                case '2':
                     document.title = "充值记录";
-                    $("#header_title").text("充值记录");
-                    $("#consume_title").val("充值")
-                    var month = new Date().getMonth() + 1;
-                    $("#time").val(new Date().getFullYear() + '.' + month);
-
+                    $("#header_title").html("充值记录");
+                     $(".header").addClass("red shadow_red");
+                    $("#bord").addClass("darkred");
+                    $("#consume_title").val("充值");
+                    document.getElementById('refresh').src="img/refesh_r.png";
                     break;
                 default:
                     alert("error");
             }
+            
+           
 
-
-
-
-
+        });
+        
+        $(function(){
+            
+            $("#refresh").bind("click", function() {
+                    });
+            
+            
+            
         });
     </script>
 
@@ -66,9 +73,9 @@
 
 <body class="body gray">
     <div class="content">
-        <div class="header blue shadow_blue">
+        <div class="header shadow_blue">
 
-            <a href=" ">
+            <a href="javascript:history.go(-1)">
                 <div class="barbtnL"><img class="barbtnimg" src="img/back.png" /></div>
             </a>
 
@@ -90,12 +97,12 @@
                 </div>
             </div>
             <div id="record">
-                <!--
+                
              <div class="templet_div">
                 <div class="templet_div_half"><span class="templet_city">南京</span><span class="templet_time">2016.6.2</span></div>
                  <div class="templet_div_half"><span class="templet_way">新街口--大行宫</span><span class="templet_money">4元</span></div>
              </div>
--->
+
 
 
 
@@ -126,7 +133,7 @@
                 $('#time').mobiscroll(opt);
             });
         </script>
-        <div class="refresh_div"><img id="refresh" src="img/refesh.png" class="refresh_img" /></div>
+        <div class="refresh_div"><img id="refresh" src="" class="refresh_img" /></div>
         <div name="footer" class="footer">
 
             <a href="main.html">

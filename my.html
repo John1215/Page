@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/share.css">
     <!--引用JQ Mobile-->
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <script src="js/117.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
     <script>
@@ -18,8 +19,8 @@
 <body class="body gray">
     <div id="content" class="content">
         <div class="header blue">
-            <a href=" ">
-                <div class="barbtnL"></div>
+            <a href="javascript:history.go(-1)">
+                <div class="barbtnL"><img class="barbtnimg" src="img/back.png" /></div>
             </a>
             <span class="header_title">我的资料</span>
         </div>
@@ -27,19 +28,20 @@
             <div style="height:50px;width:100%;margin-top:0px;"></div>
 
             <a href="" style="text-decoration:none;">
-                <div id="panel_head"><span id="div_title">修改头像</span>
-                    <div id="headimg" class="head"></div>
+                <div id="panel_head"><input type="button" id="title" value="头像" />
+                    <div class="head"><img src="img/headimg.png" class="headimg"/></div>
                 </div>
             </a>
             <a href="" style="text-decoration:none;">
-                <div id="panel">
+                <div id="panel"><input type="button" id="title" value="昵称" />
+                <input type="button" id="detail" value="飞翔的猪" />
                 </div>
             </a>
             <a href="" style="text-decoration:none;">
-                <div id="panel"></div>
+                <div id="panel"><input type="button" id="title" value="手机号" /> <input type="button" id="detail" value="13675181817" /></div>
             </a>
             <a href="" style="text-decoration:none;">
-                <div id="panel"></div>
+                <div id="panel"><input type="button" id="title" value="地区" /> <input type="button" id="detail" value="南京" /></div>
             </a>
         </div>
 

@@ -1,24 +1,23 @@
 @media screen and (min-height:561px) {
-    #panel_head {
-        margin-top: 1px;
-        height: 88px;
-    }
-}
-
-#div_title {
-    line-height: 88px;
-    margin-left: 30px;
-}
 
 .head {
-    height: 72px;
-    width: 72px;
-    margin-top: 8px;
+    height: 68px;
+    width: 68px;
+    margin-top: 6px;
 }
-
+    #panel_head {
+        height:80px;
+    }
+}
 @media screen and (max-height:560px) {
-    #panel_head {}
-    #div_title {}
+    #panel_head {
+        height:70px;
+    }
+    .head {
+    height: 58px;
+    width: 58px;
+    margin-top: 6px;
+}
 }
 
 #panel_head {
@@ -35,12 +34,20 @@
     /*    box-shadow: 0px 1px 8px #bababa;*/
 }
 
-#div_title {
-    float: left;
-    display: block;
-    font-family: '黑体';
-    font-size: 20px;
-    color: black;
+#title,#detail {
+    font-size: 18px;
+    color: black;background-color: rgba(0,0,0,.0);
+    border: none;
+    height:100%;
+ 
+}
+#title{
+     float: left;
+       width:28%;
+}
+#detail{
+    float:right;
+    width:36%;
 }
 
 #panel {
@@ -56,9 +63,11 @@
 }
 
 .head {
-    background-color: aqua;
     float: right;
-    margin-right: 12px;
-    border-radius: 100%;
+    margin-right: 25px;
     border: none;
+}
+.headimg{
+    width: 100%;
+    border-radius: 100%;
 }

@@ -25,9 +25,15 @@
     width: 100%;
     height: -webkit-calc(14%);
     /*     box-shadow:0px 1px 8px #bebebe;*/
-    background-color: rgba(50, 153, 205, .8);
+    
     position: absolute;
     top: 50px;
+}
+.darkblue{
+    background-color: rgba(50, 153, 205, .8);
+}
+.darkred{
+    background-color: rgba(205, 50, 50, .8);
 }
 
 .time {

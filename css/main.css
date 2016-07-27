@@ -1,43 +1,70 @@
 @media screen and (min-height:561px) {
     #btns {
-        margin-top: 10%;
+        margin-top: 11%;
     }
     .btn_img_div {
         width: 87%;
     }
     #info {
-        height: 80px;
+        height: 86px;
     }
     .head {
         height: 72px;
         width: 72px;
-        margin-top: 4px;
+        margin-top: 7px;
     }
 }
 
 @media screen and (max-height:560px) {
     #btns {
-        margin-top: 6%;
+        margin-top: 3.5%;
     }
     .btn_img_div {
         width: 80%;
     }
     #info {
-        height: 72px;
+        height: 74px;
     }
     .head {
         height: 60px;
         width: 60px;
-        margin-top: 6px;
+        margin-top: 7px;
     }
 }
 
-#banner {
-    width: 100%;
-    background: green;
-    height: 32%;
-}
 
+.slideimg{
+    width:100%;
+}
+.swiper-container {
+    width:100%;
+    max-height:180px;
+}
+.swiper-slide {
+        text-align: center;
+/*        font-size: 18px;*/
+/*        background:#6a6a6a;*/
+        
+        /* Center slide text vertically */
+/*
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+*/
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+.broadcast{
+    background-color: gray;
+    width:100%;height:100%;
+}
 #menu {
     width: 100%;
     background: rgba(0, 0, 0, .0);
@@ -56,7 +83,7 @@
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: #f0f0f0;
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 #btns {

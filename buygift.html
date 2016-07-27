@@ -11,6 +11,7 @@
     <!--引用JQ Mobile-->
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
     <script src="js/jquery.min.js"></script>
+    <script src="js/117.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
     <script src="js/remodal.js"></script>
     <title>单程票</title>
@@ -19,6 +20,45 @@
             document.getElementById('from').value = "";
             document.getElementById('to').value = "";
         }
+        $(function(){
+            
+            $("#confrim").click(function(){});
+            $("#btn_ok").click(function(){
+                if(($("#from").val()!="")&&($("#to").val()!="")){
+                    document.getElementById("pop").click();
+                    //                var from=$("#from").val();
+//                var to =$("#to").val();
+//               if($("#from").val()==""){
+//                $.ajax({
+//            url:"",
+//             xhrFields:{
+//			withCredentials:true
+//		},
+//              async: true,
+//                   type: "get",
+//                   data: {
+//                        from: from,
+//                        to:to
+//                   },
+//              error:function(){
+//                  window.location="signin.php";
+//              },success:function(){
+//                  var rcvd = jQuery.parseJSON(data);
+//                  $("#total").html("合计:"+"3元");
+//              }
+//          });
+//                
+                $("#fromto").html($("#from").val()+"--"+$("#to").val());
+                    
+                }
+                else{
+                    alert("站点为空！");
+                }
+                 
+
+               
+            });
+        });
     </script>
     <script>
         < script >
@@ -46,12 +86,11 @@
             console.log('cancellation');
         });
     </script>
-    </script>
 </head>
 
 <body class="body gray">
     <div class="content">
-        <div data-role="header" class="header blue">
+        <div data-role="header" class="header blue shadow_black">
 
             <a href="main.html">
                 <div class="barbtnL"><img class="barbtnimg" src="img/back.png" /></div>
@@ -79,7 +118,9 @@
             <div class="btns">
 
                 <input type="button" id="btn_rest" value="重置" onclick="rest()" />
-                <a href="#total"><input type="button" id="btn_ok" value="确定" /></a>
+                <a href="#total" id="pop"></a>
+                <input type="button" id="btn_ok" value="确定" />
+                
                 <a href="orderhistory.html"><input type="button" id="btn_history" value="历史" /></a>
 
             </div>
@@ -90,15 +131,14 @@
 
             <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
             <div>
-                <h3 id="modal1Title"><span id="total" style="font-family:'黑体';font-size:22px;color:black;">合计：3元</span></h3>
-                <p><span id="ordernum" style="font-family:'黑体';font-size:16px;color:black;">订单号:12345678901234567</span></p>
-                <p><span id="fromto" style="font-family:'黑体';font-size:19px;color:black;">新街口--大行宫</span></p>
+                <h3 id="modal1Title"><span id="total" style="font-family:'黑体';font-size:22px;color:black;"></span></h3>
+                <p><span id="fromto" style="font-family:'黑体';font-size:19px;color:black;"></span></p>
 
 
             </div>
             <br>
             <button data-remodal-action="cancel" class="remodal-cancel">取消</button>
-            <button data-remodal-action="confirm" class="remodal-confirm">结算</button>
+            <button id="confrim" data-remodal-action="confirm" class="remodal-confirm">结算</button>
         </div>
 
         <div name="footer" class="footer">

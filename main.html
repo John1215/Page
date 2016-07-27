@@ -8,20 +8,65 @@
     <link rel="stylesheet" href="css/share.css">
     <!--引用JQ Mobile-->
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <script src="js/117.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
-    <script>
-    </script>
+    <script src="js/swiper.min.js"></script>
+    <link rel="stylesheet" href="css/swiper.css">
     <title>主页</title>
+    <script>
+      $(document).ready(function(){
+//          check();
+          $.ajax({
+            url:"",
+             xhrFields:{
+			withCredentials:true
+		},
+              type:"get",
+              dataType:"text",
+              error:function(){
+                  window.location="signin.php";
+              },success:function(){
+                  var rcvd = jQuery.parseJSON(data);
+                  $(".username").html(json.user_name);
+                  $(".balance").html(json.cash);
+              }
+              
+              
+          });
+          
+          
+          
+        });
+    </script>
 </head>
+
+
+
+
 
 <body class="body gray">
     <div class="content">
-        <div data-role="header" class="header blue">
+        <div data-role="header" class="header blue shadow_black">
             <span class="header_title">主页</span>
         </div>
         <div data-role="main" class="main">
-            <div id="banner"></div>
+            <div style="height:50px;width:100%;margin-top:0px;"></div>
+<!--            <div id="banner"><img src="img/1.jpg" class="banner"/></div>-->
+           <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/1.jpg" class="slideimg"/></div>
+            <div class="swiper-slide"><img src="img/2.jpg" class="slideimg"/></div>
+            <div class="swiper-slide"><img src="img/3.jpg" class="slideimg"/></div>
+             <div class="swiper-slide"><img src="img/4.jpg" class="slideimg"/></div>
+             <div class="swiper-slide"><img src="img/5.jpg" class="slideimg"/></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
             <div id="menu">
 
                 <div id="info">
@@ -110,7 +155,18 @@
             </a>
         </div>
     </div>
-
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 0,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
+    </script>
 </body>
 
 </html>
